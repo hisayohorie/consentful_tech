@@ -311,6 +311,7 @@ header h2 {
 	.download_slant {
     width: 100%;
     padding-bottom: 70.92%; /* must be width / 1.41 */
+    margin-bottom: -50%;
     position: relative;
     overflow: hidden;
 	}
@@ -318,7 +319,7 @@ header h2 {
 	.download_slant:before {
 	    content: '';
 	    position: absolute;
-	    top: 102%;
+	    top: 29%;
 	    left: -10%;
 	    width: 125%;
 	    height: 100%;
@@ -340,6 +341,16 @@ header h2 {
 	.consentful_tech_in_action h3 {
 		text-transform: uppercase;
 		line-height: 1.25;
+		max-width: 80%;
+		margin: auto;
+		padding: 0.5em;
+	}
+
+	.consentful_tech_in_action p {
+		color: #000;
+		max-width: 80%;
+		margin: auto;
+		padding: 0 0.5em 1.5em 0.5em;
 	}
 
 	.consentful_tech_in_action ul {
@@ -349,6 +360,14 @@ header h2 {
 	.consentful_tech_in_action li {
 		background-color: #F8E0FF;
 		color:#30023C;
+		margin-top: 2em;
+	}
+
+	.consentful_tech_in_action li img {
+		display: block;
+		padding-top: 2.15em;
+		margin: auto;
+		max-width: 80%;
 	}
 
 	.pointy-bottom {
