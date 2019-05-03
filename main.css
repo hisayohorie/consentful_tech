@@ -87,6 +87,29 @@ header h2 {
 	margin-left: 0;
 }
 
+footer {
+	background-color: #30023C;
+	padding: 25px;
+
+}
+
+.footer_imgs {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px;
+}
+footer img {
+	display: inline;
+}
+
+footer p {
+	color: #fff;
+	width: 80%;
+	margin: 0 auto;
+	padding: 30px;
+}
+
 @media only screen and (max-width: 600px) {
 	header {
 	    display: grid;
