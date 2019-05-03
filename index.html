@@ -160,15 +160,16 @@
 			<h2>Get in touch</h2>
 			<!-- fnContact captcha -->
 			<form action="https://fncontact.com/consentfultechproject/post">
-				<p>Name (optional)</p>
-  				<input type="text" name="name" value="Name">
-  				<p>Email (optional)</p>
- 				<input type="text" name="email" value="Email">
+				<p>Name</p>
+  				<input type="text" name="name" value="Name (optional)">
+  				<p>Email</p>
+  				<input type="text" name="email" value="Email (optional)">
  				<p>Message</p>
- 				<input type="textarea" name="message">
+ 				<textarea name="message" placeholder="Message">Message
+ 				</textarea>
  				<div id='fnContactCaptcha'></div>
-				<script src='https://fncontact.com/captcha.js'></script>
- 				<input type="submit" value="Send Message">
+ 				<script src='https://fncontact.com/captcha.js'></script>
+ 				<input type="submit" value="Send" class="submit">
 			</form>
 		</section>
 	</main>
