@@ -11,7 +11,7 @@
             <polygon id="Fill-4" fill="#45B97B" transform="translate(186.858725, 197.779103) rotate(83.000000) translate(-186.858725, -197.779103) " points="148.860955 303.40473 77.4640919 205.2172 187.203817 94.0622862 296.253358 92.1534756 282.887566 239.261657"></polygon>
             <polygon id="Fill-5" fill="#00A550" transform="translate(188.619118, 200.978308) rotate(83.000000) translate(-188.619118, -200.978308) " points="155.577823 292.826027 93.4928603 207.445076 188.920667 110.788955 283.745375 109.130589 272.123192 237.05042"></polygon>
             <text id="ENTHUSIASTIC" font-family="WorkSans-SemiBold, Work Sans SemiBold" font-size="20" font-weight="500" letter-spacing="0.1248332" fill="#FFFFFF">
-                <tspan x="129.731573" y="212">ENTHUSIASTIC</tspan>
+                <!-- <tspan x="129.731573" y="212">ENTHUSIASTIC</tspan> -->
             </text>
         </g>
     </g>

@@ -194,12 +194,14 @@ footer p {
 	}
 
 	h1 {
-		font-size: 0.65em;
+		font-size: 0.85em;
 		line-height: 1em;
 		margin-left: 0.75em;
 		color: #fff;
 		grid-column-start: 1;
 		grid-column-end:5;
+		background-color: #30023C;
+		z-index: 10;
 	}
 
 	h2{
@@ -214,7 +216,8 @@ footer p {
 		color: #30023C;
 	}
 
-	ul.nav {
+	/*ul.nav */
+	.modal_close{
 		display: grid;
 		padding-left:0;
 		padding: 0 0.2em;
@@ -229,13 +232,14 @@ footer p {
 	/* add to ul.nav when humburger click */
 	.modal_open {
 		display: grid;
-		padding-left:0;
-		padding: 0 0.2em;
-		margin:0;
+		padding: 0.5 1em;
+		margin:0px;
 		grid-column-start: 1;
-		grid-column-end: 4;
+		grid-column-end: 7;
 		grid-template-columns: 100%;
 		grid-template-rows: 25% 25% 25% 25%;
+		z-index: 10;
+		background-color: #30023C;
 
 	}
 
@@ -264,13 +268,8 @@ footer p {
 	}
 
 	.humburger_close {
-		grid-column-start: 3;
-		grid-column-end: 4;
-		grid-row-start: 1;
-		grid-row-end: 2;
-		margin-top: 5px;
-		margin-left: 10px;
-		display: none;
+		grid-column-start: 6;
+		padding: 10px 0 20px 10px;
 	}
 
 	/*------ GOOD DIGITAL CONSENT SECTION -------*/

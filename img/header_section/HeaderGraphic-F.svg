@@ -11,7 +11,7 @@
             <polygon id="Fill-4" fill="#00BFF2" transform="translate(235.023851, 199.313851) rotate(162.000000) translate(-235.023851, -199.313851) " points="329.828924 282.713162 199.795236 293.73356 103.416595 251.494213 148.341309 154.816964 279.947663 104.894142 366.631107 151.650368"></polygon>
             <polygon id="Fill-5" fill="#00ADEE" transform="translate(235.023628, 199.312703) rotate(162.000000) translate(-235.023628, -199.312703) " points="317.463096 271.832943 204.389776 281.416759 120.582811 244.684936 159.6477 160.617685 274.089419 117.208648 349.464446 157.865062"></polygon>
             <text id="FREELY-GIVEN" font-family="WorkSans-SemiBold, Work Sans SemiBold" font-size="20" font-weight="500" letter-spacing="0.1248332" fill="#FFFFFF">
-                <tspan x="158.04562" y="198">FREELY GIVEN</tspan>
+                <!-- <tspan x="158.04562" y="198">FREELY GIVEN</tspan> -->
             </text>
         </g>
     </g>
