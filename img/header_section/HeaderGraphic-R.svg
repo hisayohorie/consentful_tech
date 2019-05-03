@@ -11,7 +11,7 @@
             <polygon id="Fill-4" fill="#F072AB" transform="translate(204.517247, 193.270882) rotate(-75.000000) translate(-204.517247, -193.270882) " points="166.048036 305.089916 103.405484 213.026382 133.550731 129.140854 231.113368 81.451847 281.57969 131.41496 305.629011 218.933623 256.270922 297.042115"></polygon>
             <polygon id="Fill-5" fill="#EB008B" transform="translate(204.516833, 193.268912) rotate(-75.000000) translate(-204.516833, -193.268912) " points="171.065035 290.503435 116.593561 210.448265 142.806509 137.50371 227.643119 96.0343886 271.527188 139.481038 292.440105 215.585151 249.518942 283.506122"></polygon>
             <text id="REVERSIBLE" font-family="WorkSans-SemiBold, Work Sans SemiBold" font-size="20" font-weight="500" letter-spacing="0.1248332" fill="#FFFFFF">
-                <!-- <tspan x="146.87097" y="198">REVERSIBLE</tspan> -->
+                <tspan x="146.87097" y="198">REVERSIBLE</tspan>
             </text>
         </g>
     </g>
