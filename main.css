@@ -51,6 +51,11 @@ section {
 	display: grid;
 }
 
+.nav li a {
+	text-decoration: none;
+	color:#fff;
+}
+
 header h2 {
 	text-decoration: none;
 }
