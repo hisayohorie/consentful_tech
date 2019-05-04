@@ -47,7 +47,7 @@ section {
 	display: grid;
 }
 
-ul.nav {
+.nav {
 	display: grid;
 }
 
@@ -111,16 +111,23 @@ footer p {
 }
 
 @media only screen and (max-width: 600px) {
+	html {
+	    overflow-x: hidden;
+	}
+	.header_wrapper {
+		overflow-x: hidden;
+		position: absolute;
+		top: 30px;
+		height: 900px;
+		width: 100%;
+	}
 	header {
 	    display: grid;
-	    grid-template-columns: 20vw 1fr 1fr 1fr 1fr 1fr 20vw;
+	    grid-template-columns: repeat(7, 20vw);
 	    grid-template-rows: 140px repeat(5, 1fr);
 	    background-color: #F8E0FF;
-	    width: 140vw;
 	    position: absolute;
-	    left: -20vw;
-	    top: 30px;
-	    height: 900px;
+	    margin-left: -20vw;
 	}
 	section {
 		padding: 1em 2em;
@@ -140,7 +147,6 @@ footer p {
 	.header-r {
 		grid-row: 1 / 3;
     	grid-column: 3 / 6;
-   		align-self: end;
 	}
 
 	.header-i {
@@ -177,6 +183,9 @@ footer p {
 		background-color: #30023C;
 		color: #fff;
 		height: 30px;
+		z-index: 10;
+		position: relative;
+		align-items: center;
 	}
 
 	/* add to nav when humburger click */
@@ -201,7 +210,6 @@ footer p {
 		grid-column-start: 1;
 		grid-column-end:5;
 		background-color: #30023C;
-		z-index: 10;
 	}
 
 	h2{
@@ -217,7 +225,7 @@ footer p {
 	}
 
 	/*ul.nav */
-	.modal_close{
+	.modal_close {
 		display: grid;
 		padding-left:0;
 		padding: 0 0.2em;
@@ -270,7 +278,9 @@ footer p {
 	.humburger_close {
 		grid-column-start: 6;
 		padding: 10px 0 20px 10px;
+		display: none;
 	}
+
 
 	/*------ GOOD DIGITAL CONSENT SECTION -------*/
 	
