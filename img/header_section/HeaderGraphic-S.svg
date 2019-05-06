@@ -11,7 +11,7 @@
             <polygon id="Fill-4" fill="#FAB061" transform="translate(229.534335, 173.167432) rotate(-5.000000) translate(-229.534335, -173.167432) " points="375.469326 63.5056524 267.09184 282.829212 83.5993431 140.43937"></polygon>
             <polygon id="Fill-5" fill="#F6931D" transform="translate(227.477614, 169.822061) rotate(-5.000000) translate(-227.477614, -169.822061) " points="354.95096 74.1970036 260.283006 265.447119 100.004267 141.281518"></polygon>
             <text id="SPECIFIC" font-family="WorkSans-SemiBold, Work Sans SemiBold" font-size="20" font-weight="500" letter-spacing="0.1248332" fill="#FFFFFF">
-                <!-- <tspan x="191.487848" y="170">SPECIFIC</tspan> -->
+                <tspan x="191.487848" y="170">SPECIFIC</tspan>
             </text>
         </g>
     </g>

@@ -52,7 +52,7 @@
                 <polygon id="Fill-4" fill="#D645EC" points="319.71566 222.368184 180.912847 275 66.6201887 179.259027 172.565407 57"></polygon>
                 <polygon id="Fill-5" fill="#BE00DA" points="302.709245 215.128484 182.009116 261 82.6262264 177.557293 174.752587 71"></polygon>
                 <text id="INFORMED" font-family="WorkSans-SemiBold, Work Sans SemiBold" font-size="20" font-weight="500" letter-spacing="0.1248332" fill="#FFFFFF">
-                    <!-- <tspan x="138.498214" y="177">INFORMED</tspan> -->
+                    <tspan x="138.498214" y="177">INFORMED</tspan>
                 </text>
             </g>
         </g>
