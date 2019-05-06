@@ -594,4 +594,9 @@ footer p {
 	.header-s {
 		padding: 0 20px;
 	}
+	/*--------------- FOOTER SECTION --------------------*/
+
+	.footer_imgs img {
+		mad-width: 40%;
+	}
 }
