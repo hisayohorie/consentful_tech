@@ -357,15 +357,22 @@ footer p {
 
 	.fries h2 {
 		max-width: 380px;
+		font-size: 2.5em;
 	}
 
 	.fries h3 {
 		text-decoration: underline;
 		color: #fff;
+		font-size: 1.75em;
+		margin: 15px 0;
 	}
 
 	.fries p, .fries h2 {
 		color: #fff;
+	}
+
+	.fries ul {
+		padding-left:0;
 	}
 
 
@@ -377,10 +384,10 @@ footer p {
 	.FRIES_comment {
 		color: #30023C;
 		background-color: #F8E0FF;
-		padding-top: 100px;
+		padding-top: 70px;
 	}
 	.FRIES_comment p {
-		padding-top: 2em;
+		padding-top: 0;
 	}
 	.fries_slant {
 	    width: 100%;
@@ -459,6 +466,7 @@ footer p {
 
 	.consentful_tech_in_action h2 {
 		color: #FFF;
+		margin-top:0;
 	}
 	.consentful_tech_in_action h3 {
 		text-transform: uppercase;
@@ -476,7 +484,8 @@ footer p {
 	}
 
 	.consentful_tech_in_action ul {
-		padding: 1.4em;
+		padding-left:0;
+		margin-top:0;
 	}
 
 	.consentful_tech_in_action li {
@@ -497,7 +506,7 @@ footer p {
 	    padding-bottom: 70.92%; /* must be width / 1.41 */
 	    position: relative;
 	    overflow: hidden;
-	    margin-bottom: -60%;
+	    margin-bottom: -70.92%;
 	}
 
 	.pointy-bottom:before {
@@ -513,7 +522,16 @@ footer p {
 	}
 
 	/*------------- SUPPORT SECTION -------------------*/
+	.support h2 {
+		margin-bottom: 0;
+	}
+
+	.support ul {
+		padding-left:0;
+	}
+
 	.support li {
+		padding-top: 0;
 		margin: 1.3em;
 	}
 	.support li a{
@@ -531,6 +549,15 @@ footer p {
 		font-size: 1.3em;
 		line-height: 1.25em;
 		color: #fff;
+	}
+
+	/*------- GET IN TOUCH SECTION --------------*/
+
+	section.get_in_touch {
+		padding-top: 0;
+	}
+	.get_in_touch h2 {
+		margin:20px 0;
 	}
 }
 
