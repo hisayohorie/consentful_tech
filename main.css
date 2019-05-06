@@ -114,8 +114,12 @@ footer {
 .footer_imgs {
 	width: 90%;
 	margin: 0 auto;
-	text-align: center;
-	padding: 20px;
+	text-align: left;
+	padding: 10px;
+}
+
+.footer_imgs img:last-child{
+	margin-left: 40px;
 }
 footer img {
 	display: inline;
@@ -123,9 +127,9 @@ footer img {
 
 footer p {
 	color: #fff;
-	width: 80%;
+	width: 92%;
 	margin: 0 auto;
-	padding: 30px;
+	padding-top: 30px;
 }
 
 @media only screen and (max-width: 600px) {
