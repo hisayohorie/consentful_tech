@@ -597,6 +597,6 @@ footer p {
 	/*--------------- FOOTER SECTION --------------------*/
 
 	.footer_imgs img {
-		mad-width: 40%;
+		max-width: 40%;
 	}
 }
