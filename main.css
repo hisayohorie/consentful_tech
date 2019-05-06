@@ -390,8 +390,9 @@ footer p {
 	.FRIES_comment {
 		color: #30023C;
 		background-color: #F8E0FF;
-		padding-top: 70px;
+		padding-top: 110px;
 	}
+
 	.FRIES_comment p {
 		padding-top: 0;
 	}
@@ -571,9 +572,16 @@ footer p {
 	header h2 {
 		font-size: 2.5em;
 	}
+
+
 }
 
 @media only screen and (max-width: 398px) {
+	/*-------- FRIES COMMENT SECTION ------------------*/
+	.FRIES_comment {
+		padding-top: 70px;
+	}
+
 	/*------------- SUPPORT SECTION -------------------*/
 	.support li a h3 {
 		font-size: 1.1em;
