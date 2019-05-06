@@ -223,12 +223,12 @@ footer p {
 	}
 
 	h1 {
-		font-size: 0.85em;
+		font-size: 1em;
 		line-height: 1em;
 		margin-left: 0.75em;
 		color: #fff;
 		grid-column-start: 1;
-		grid-column-end:5;
+		grid-column-end: 6;
 		background-color: #30023C;
 	}
 
@@ -242,6 +242,7 @@ footer p {
 	p {
 		font-size: 1em;
 		color: #30023C;
+		line-height: 1.45em;
 	}
 
 	/*ul.nav */
@@ -259,21 +260,22 @@ footer p {
 
 	/* add to ul.nav when humburger click */
 	.modal_open {
-		display: grid;
-		padding: 0.5 1em;
+		display: grid;	
+		padding: 0 1em;
 		margin:0px;
 		grid-column-start: 1;
 		grid-column-end: 7;
 		grid-template-columns: 100%;
-		grid-template-rows: 25% 25% 25% 25%;
+		grid-template-rows: 20% 20% 20% 20% 20%;
 		z-index: 10;
 		background-color: #30023C;
+
 
 	}
 
 	nav li {
-		font-size: 0.75em;
-		padding: 2em 0;
+		font-size: 1em;
+		padding: 1em 0;
 	}
 
 	/* humberger menu */
