@@ -115,14 +115,16 @@ footer {
 	width: 90%;
 	margin: 0 auto;
 	text-align: left;
-	padding: 10px;
+	padding: 0px;
 }
 
-.footer_imgs img:last-child{
-	margin-left: 40px;
-}
-footer img {
+
+footer_imgs a {
 	display: inline;
+}
+
+.AATLogo {
+	margin-left: 30px;
 }
 
 footer p {
