@@ -1,14 +1,17 @@
+
 body {
 	font-family: 'Work Sans', sans-serif;
 	max-width: 100%;
 }
 
-header {
+/*header {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
 	background-color: #F8E0FF;
 }
+*/
+
 
 h1 {
 	font-size: 3.125em;
@@ -138,7 +141,7 @@ footer p {
 	html {
 	    overflow-x: hidden;
 	}
-	.header_wrapper {
+	/*.header_wrapper {
 		overflow-x: hidden;
 		position: absolute;
 		top: 30px;
@@ -154,16 +157,23 @@ footer p {
 	    position: absolute;
 	    margin-left: -20vw;
 	}
+*/
+
+	header {
+	position: relative;
+	background-color: #F8E0FF;
+	text-align: center;
+	}
 
 	section {
 		padding: 1em 2em;
 	}
 
-	header img {
+/*	header img {
 	    justify-self: stretch;
    		align-self: stretch;
     	z-index: 1;
-	}
+	}*/
 
 	.header-f {
 		grid-row: 2 / 4;
@@ -192,7 +202,7 @@ footer p {
 	    padding: 20px;
 	}
 
-	header h2 {
+/*	header h2 {
 	    text-decoration: none;
 	    grid-row: 3;
 	    grid-column: 3 / 6;
@@ -200,6 +210,15 @@ footer p {
 	    text-align: center;
 	    margin: 0;
 	    z-index: 2;
+	}*/
+
+	header h2 {
+		text-decoration: none;
+		position: absolute;
+		top: 33%;
+		width: 35%;
+		left: 32%;
+		font-size: 2em;
 	}
 
 	nav {
@@ -223,7 +242,6 @@ footer p {
 	}
 
 	main {
-		margin-top: 700px;
 		position: relative;
 		z-index: 2;
 	}
@@ -555,7 +573,7 @@ footer p {
 		text-align: center;
 		font-size: 1.3em;
 		line-height: 1.25em;
-		color: #fff;
+		color: #CD6CE7;
 	}
 
 	/*------- GET IN TOUCH SECTION --------------*/
@@ -568,15 +586,28 @@ footer p {
 	}
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 530px) {
 	header h2 {
-		font-size: 2.5em;
+		font-size: 1.9em;
+		top: 34%;
+	}
+
+}
+
+@media only screen and (max-width: 485px) {
+	header h2 {
+		font-size: 1.4em;
+		top: 35%;
 	}
 
 
 }
 
 @media only screen and (max-width: 398px) {
+
+	header h2 {
+		font-size: 1.35em;
+	}
 	/*-------- FRIES COMMENT SECTION ------------------*/
 	.FRIES_comment {
 		padding-top: 70px;
@@ -587,9 +618,6 @@ footer p {
 		font-size: 1.1em;
 	}
 
-	header h2 {
-		font-size: 2.25em;
-	}
 
 	.header-s {
 		padding: 0 20px;
@@ -598,5 +626,12 @@ footer p {
 
 	.footer_imgs img {
 		max-width: 40%;
+	}
+}
+
+@media only screen and (max-width: 398px){
+	header h2 {
+		font-size: 1.1em;
+
 	}
 }
