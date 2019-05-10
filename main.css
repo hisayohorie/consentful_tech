@@ -47,9 +47,6 @@ li {
 	list-style-type: none;
 }
 
-section {
-	display: grid;
-}
 
 .nav {
 	display: grid;
@@ -471,8 +468,14 @@ footer p {
 
 	/*---- DOWNLOAD SECTION --------*/
 
-	.download_zine img {
-		margin: 1em;
+	.download_zine a {
+		text-decoration: none;
+		border: 1px solid #30023C;
+		background-color: #30023C;
+		color: #fff;
+		padding: 0.7em;
+		margin: 1em 0;
+		display: inline-block;
 	}
 
 	.download_slant {
