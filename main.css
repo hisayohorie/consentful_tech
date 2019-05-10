@@ -224,7 +224,7 @@ footer p {
 
 	nav {
 		display: grid;
-		grid-template-columns:  max-content 1fr 1fr 1fr;
+		grid-template-columns:  max-content 1fr max-content;
 		grid-template-rows: 100% ;
 		background-color: #30023C;
 		color: #fff;
@@ -262,7 +262,7 @@ footer p {
 	h1 {
 		font-size: 1em;
 		line-height: 1em;
-		margin:0 1.75em;
+		margin: 0 0 0 1.75em;
 		color: #fff;
 		grid-column-start: 1;
 		background-color: #30023C;
@@ -318,12 +318,9 @@ footer p {
 	/* humberger menu */
 
 	.humburger {
-		display: grid;
-		grid-template-columns: 45%;
-		grid-template-rows: 4px 4px 4px;
-		margin: 5px 10px 5px 15px;
+		margin: 5px 20px;
 		padding: 0.1em;
-		grid-column-start: 4;
+		grid-column: 3;
 		grid-row-start: 1;
 		grid-row-end: 2;
 	}
@@ -334,9 +331,10 @@ footer p {
 	}
 
 	.humburger_close {
-		grid-column-start: 6;
-		padding: 10px 0 20px 10px;
+		grid-column-start: 3;
 		display: none;
+		padding: 0.1em;
+		margin: 5px 20px;
 	}
 
 
@@ -361,12 +359,14 @@ footer p {
 	    width: 125%;
 	    position: absolute;
 	    top: -59%;
+	    left: -25%;
 	    transform-origin: 100% 0%;
 	    transform: rotate(8deg) skewX(0deg);
 	}
 
 	.good_digital_consent_slant_2 {
 	    width: 100%;
+	    top:-5px;
 	    padding-bottom: 70.92%; /* must be width / 1.41 */
 	    margin-bottom: -60%;
 	    position: relative;
@@ -378,11 +378,11 @@ footer p {
 	    position: absolute;
 	    width: 125%;
 	    height: 100%;
-	    top: -49%;
-	    left: 0%;
+	    top: 48%;
+	    left: -25%;
 	    background-color: #F8E0FF;
 	    transform-origin: 100% 0%;
-	    transform: rotate(20deg) skewX(0deg);
+	    transform: rotate(90deg) skewX(-25deg);
 	}
 
 	/*------ FRIES SECTION -------*/
@@ -428,6 +428,7 @@ footer p {
 	}
 	.fries_slant {
 	    width: 100%;
+	    top:-10px;
 	    padding-bottom: 70.92%; /* must be width / 1.41 */
 	    position: relative;
 	    overflow: hidden;
@@ -438,8 +439,8 @@ footer p {
 	.fries_slant:before {
 	    content: '';
 	    position: absolute;
-	    top: -105%;
-	    left: -15%;
+	    top: -96%;
+	    left: -36%;
 	    width: 125%;
 	    height: 100%;
 	    background-color: #30023C;
@@ -458,13 +459,13 @@ footer p {
 	.comment_slant:before {
 	    content: '';
 	    position: absolute;
-	    top: -62%;
-	    left: -10%;
-	    width: 125%;
+	    top: -70%;
+	    left: 0;
+	    width: 100%;
 	    height: 100%;
 	    background-color: #F8E0FF;
 	    transform-origin: 100% 0%;
-	    transform: rotate(12deg) skewX(0deg);
+	    transform: rotate(13deg) skewX(13deg);
 	    z-index: -1;
 	}
 
@@ -585,7 +586,7 @@ footer p {
 		text-align: center;
 		font-size: 1.3em;
 		line-height: 1.25em;
-		color: #CD6CE7;
+		color: #fff;
 	}
 
 	/*------- GET IN TOUCH SECTION --------------*/
@@ -618,7 +619,12 @@ footer p {
 @media only screen and (max-width: 398px) {
 
 	header h2 {
-		font-size: 1.35em;
+		font-size: 1.15em;
+	}
+
+
+	.humburger {
+		margin: 5px 30px;
 	}
 	/*-------- FRIES COMMENT SECTION ------------------*/
 	.FRIES_comment {
@@ -641,9 +647,17 @@ footer p {
 	}
 }
 
-@media only screen and (max-width: 398px){
-	header h2 {
-		font-size: 1.1em;
-
+@media only screen and (max-width: 340px) {
+	nav {
+		grid-template-columns: max-content max-content;
 	}
+
+	.humburger {
+		grid-column: 2;
+	}
+
+	.humburger_close {
+		grid-column: 2;
+	}
+
 }
