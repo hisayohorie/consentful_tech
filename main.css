@@ -258,7 +258,7 @@ footer p {
 	h1 {
 		font-size: 1em;
 		line-height: 1em;
-		margin: 0 0 0 1.75em;
+		margin: 0 0 0 1em;
 		color: #fff;
 		grid-column-start: 1;
 		background-color: #30023C;
@@ -475,6 +475,7 @@ footer p {
 		padding: 0.7em;
 		margin: 1em 0;
 		display: inline-block;
+		text-transform: uppercase;
 	}
 
 	.download_slant {
