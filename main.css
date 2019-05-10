@@ -358,10 +358,10 @@ footer p {
 	    height: 100%;
 	    width: 125%;
 	    position: absolute;
-	    top: -59%;
+	    top: -73%;
 	    left: -25%;
 	    transform-origin: 100% 0%;
-	    transform: rotate(8deg) skewX(0deg);
+	    transform: rotate(4deg) skewX(0deg);
 	}
 
 	.good_digital_consent_slant_2 {
@@ -378,7 +378,7 @@ footer p {
 	    position: absolute;
 	    width: 125%;
 	    height: 100%;
-	    top: 52%;
+	    top: 44%;
 	    left: -24%;
 	    background-color: #F8E0FF;
 	    transform-origin: 100% 0%;
