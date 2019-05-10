@@ -47,7 +47,6 @@ li {
 	list-style-type: none;
 }
 
-
 .nav {
 	display: grid;
 }
@@ -672,6 +671,10 @@ footer p {
 
 	.humburger_close {
 		grid-column: 2;
+	}
+
+	.support li a h3 {
+		font-size: 1em;
 	}
 
 }
