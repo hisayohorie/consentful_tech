@@ -34,6 +34,10 @@ h3 {
 	color: #472869;
 }
 
+h4 {
+	color:#472869;
+}
+
 p {
 	font-size: 1.25em;
 	line-height: 1.625em;
@@ -76,10 +80,12 @@ header h2 {
 .get_in_touch {
 	overflow-x: hidden;
 	padding: 1em;
+	position: relative;
 }
 
 .get_in_touch form {
 	width: 100vw;
+	margin: 0 auto;
 }
 
 .get_in_touch form textarea {
@@ -92,18 +98,42 @@ header h2 {
 	border: solid 2px #777;
 }
 
-.get_in_touch form .submit {
+.get_in_touch form .submit, .get_in_touch form .clear {
 	background-color: #30023C;
 	color: #fff;
 	width: 30%;
 	margin: 20px;
 	margin-left: 0;
+	text-transform: uppercase;
+	border: none;
 }
 
 #fnContactCaptcha {
 	margin: 15px;
 	margin-left: 0;
 }
+
+.get_in_touch .form_modal {
+	position: absolute;
+	background-color: #F8E0FF;
+	top: 20px;
+	padding-top:0;
+	width: 70%;
+	border: 1px solid #30023C;
+	display: none;
+}
+
+.get_in_touch h4 {
+	display: inline-block;
+	margin-top: 0.7em;
+}
+
+
+.form_modal_close {
+	text-align: right;
+}
+
+
 
 footer {
 	background-color: #30023C;
@@ -239,15 +269,18 @@ footer p {
 	}
 
 	.title_underline::after {
-		content:"";
-		height:8px;
-	    display: inline-block;
+		height: 8px;
+		display: inline-block;
+		padding: 0;
 	    width:100%;
+	}
+
+	.modal_open .title_underline::after {
+		content:"";
+		/*height:8px;*/
 		background-image: url(img/underlines/Underline-White.svg);
 		background-repeat: repeat-x;
 		background-size: contain;
-		display: inline-block;
-		padding: 0;
 	}
 
 	main {
@@ -279,7 +312,7 @@ footer p {
 	}
 
 	/*ul.nav */
-	.modal_close {
+	.modal_close .nav {
 		display: grid;
 		padding-left:0;
 		padding: 0 0.2em;
@@ -292,7 +325,7 @@ footer p {
 	}
 
 	/* add to ul.nav when humburger click */
-	.modal_open {
+	.modal_open .nav {
 		display: grid;	
 		padding: 0 1em;
 		margin:0px;
