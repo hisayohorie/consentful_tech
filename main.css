@@ -1113,6 +1113,10 @@ footer p {
 	.get_in_touch h2::after {
 		display: none;
 	}
+
+	.get_in_touch form .submit, .get_in_touch form .clear {
+		width: 30%;
+	}
 }
 
 @media only screen and (max-width: 530px) {
@@ -1125,6 +1129,10 @@ footer p {
 		padding-top: 0;
 	}
 
+	.get_in_touch form .submit, .get_in_touch form .clear {
+		width: 35%;
+	}
+
 }
 
 @media only screen and (max-width: 485px) {
@@ -1132,7 +1140,10 @@ footer p {
 		font-size: 1.4em;
 		max-width: 180px;
 	}
-
+	
+	.get_in_touch form .submit, .get_in_touch form .clear {
+		width: 40%;
+	}
 
 }
 
