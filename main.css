@@ -102,14 +102,6 @@ nav li {
 		background-color: #F8E0FF;
 }
 
-.good_digital_consent h2::after {
-		content:"";
-		/*height:8px;*/
-		background-image: url(img/underlines/Underline-White.svg);
-		background-repeat: repeat-x;
-		background-size: contain;
-}
-
 .good_digital_consent p:first-child {
 	margin-top:0;
 }
@@ -170,7 +162,21 @@ nav li {
 .fries h2 {
 	margin-bottom: 0;
 	margin-top: 2em;
+	line-height: 1em;
+	display: inline-block;
 }
+
+.fries h2::after {
+    content: "";
+    background-image: url(img/underlines/Underline-White.svg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    height: 10px;
+	display: inline-block;
+	padding: 0;
+	width:90%;
+}
+
 
 .fries p, .fries h2, .fries h3 {
 	color: #fff;
@@ -182,7 +188,7 @@ nav li {
 
 .fries_intro {
 	width: 50%;
-	margin: 0.5em 3em;
+	margin: 1em 3em;
 	margin-bottom: 2em;
 }
 
@@ -281,6 +287,22 @@ nav li {
 }
 
 /*--------- DOWNLOAD ZINE SECTION (DESKTOP) -------------*/
+
+.download_zine h2 {
+	line-height: 1.5em;
+	display: block;
+}
+.download_zine h2::after {
+    content: "";
+    background-image: url(img/underlines/Underlin-Purple.svg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    height: 10px;
+	display: block;
+	padding: 0;
+	width:22%;
+}
+
 .download_zine {
 	padding-top: 20%;
 }
@@ -362,6 +384,19 @@ nav li {
 .consentful_tech_in_action h2 {
 	color: #FFF;
 	margin-top:0;
+	line-height: 1.5em;
+	display: inline-block;
+}
+
+.consentful_tech_in_action h2::after {
+    content: "";
+    background-image: url(img/underlines/Underline-White.svg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    height: 10px;
+	display: block;
+	padding: 0;
+	width:100%;
 }
 .consentful_tech_in_action h3 {
 	text-transform: uppercase;
@@ -427,6 +462,22 @@ nav li {
 		padding-top: 20%;
 	}
 
+	.support h2 {
+		display: inline-block;
+		line-height: 1.5em;
+	}
+
+	.support h2::after {
+	    content: "";
+	    background-image: url(img/underlines/Underlin-Purple.svg);
+	    background-repeat: repeat-x;
+	    background-size: contain;
+	    height: 10px;
+		display: block;
+		padding: 0;
+		width:100%;
+	}
+
 	.support ul {
 		padding-left:0;
 		display: flex;
@@ -464,6 +515,22 @@ nav li {
 
 /*------ GET IN TOUCH SECTION (DESKTOP) -------*/
 
+.get_in_touch h2 {
+	display: inline-block;
+	line-height: 1.7em;
+}
+
+.get_in_touch h2::after {
+    content: "";
+    background-image: url(img/underlines/Underlin-Purple.svg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    height: 10px;
+	display: block;
+	padding: 0;
+	width:100%;
+}
+
 .get_in_touch form input {
 	background-color: #F8E0FF;
 	padding: 10px;
@@ -480,7 +547,7 @@ nav li {
 }
 
 .form_wrapper {
-	text-align: center;
+	text-align: left;
 
 }
 
@@ -507,11 +574,13 @@ nav li {
 	margin-left: 0;
 	text-transform: uppercase;
 	border: none;
+	padding: 20px;
 }
 
 #fnContactCaptcha {
-	margin: 15px;
+	margin: 15px 0;
 	margin-left: 0;
+	display: inline-block;
 }
 
 .get_in_touch .form_modal {
@@ -527,6 +596,7 @@ nav li {
 .get_in_touch h4 {
 	display: inline-block;
 	margin-top: 0.7em;
+	text-decoration: underline;
 }
 
 
@@ -793,6 +863,10 @@ footer p {
 		font-size: 2.5em;
 	}
 
+	.fries h2::after {
+		display: none;
+	}
+
 	.fries h3 {
 		text-decoration: underline;
 		color: #fff;
@@ -906,7 +980,10 @@ footer p {
 	    transform: rotate(6deg) skewX(0deg);
 	    z-index: -1;
 	}
-
+	
+	.download_zine h2::after {
+		display: none;
+	}
 	.download_zine img {
 	max-width: 100%;
 	}
@@ -925,6 +1002,11 @@ footer p {
 		color: #FFF;
 		margin-top:0;
 	}
+
+	.consentful_tech_in_action h2::after {
+		display: none;
+	}
+
 	.consentful_tech_in_action h3 {
 		text-transform: uppercase;
 		line-height: 1.25;
@@ -986,6 +1068,10 @@ footer p {
 		margin-top: 1.5em;
 	}
 
+	.support h2::after {
+		display: none;
+	}
+
 	.support ul {
 		padding-left:0;
 		display: block;
@@ -1021,6 +1107,9 @@ footer p {
 	}
 	.get_in_touch h2 {
 		margin:20px 0;
+	}
+	.get_in_touch h2::after {
+		display: none;
 	}
 }
 
