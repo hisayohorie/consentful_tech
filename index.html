@@ -51,11 +51,11 @@
 		<div class="good_digital_consent_slant_2"></div>
 		<section class="fries" id="fries">
 			<h2>Good digital consent is...</h2>
-			<p>The Consentful Tech Project’s definition of good digital consent is adapted from Planned Parenthood’s definition of sexual consent, which abbreviates to the easy-to-remember, tasty acronym “FRIES.” According to this definition, consent must be:
+			<p class="fries_intro">The Consentful Tech Project’s definition of good digital consent is adapted from Planned Parenthood’s definition of sexual consent, which abbreviates to the easy-to-remember, tasty acronym “FRIES.” According to this definition, consent must be:
 			</p>
 			<ul>
 				<li>
-					<img src="img/FRIES/FRIES-F.svg">
+					<img class="fries_img" src="img/FRIES/FRIES-F.svg">
 					<h3>Freely given.</h3>
 					<p>Doing something with someone is a decision that should be made without pressure, force, manipulation, or while incapacitated.
 					</p>
@@ -63,7 +63,7 @@
 					</p>
 				</li>
 				<li>
-					<img src="img/FRIES/FRIES-R.svg">
+					<img class="fries_img" src="img/FRIES/FRIES-R.svg">
 					<h3>Reversible.</h3>
 					<p>Anyone can change their mind about what they want to do, at any time.
 					</p>
@@ -71,7 +71,7 @@
 					</p>
 				</li>
 				<li>
-					<img src="img/FRIES/FRIES-I.svg">
+					<img class="fries_img" src="img/FRIES/FRIES-I.svg">
 					<h3>Informed.</h3>
 					<p>Informed. Be honest. For example, if someone says they’ll use protection and then they don’t, that’s not consent.
 					</p>
@@ -79,7 +79,7 @@
 					</p>
 				</li>
 				<li>
-					<img src="img/FRIES/FRIES-E.svg">
+					<img class="fries_img" src="img/FRIES/FRIES-E.svg">
 					<h3>Enthusiastic.</h3>
 					<p>If someone isn’t excited, or really into it, that’s not consent.
 					</p>
@@ -87,7 +87,7 @@
 					</p>
 				</li>
 				<li>
-					<img src="img/FRIES/FRIES-S.svg">
+					<img class="fries_img" src="img/FRIES/FRIES-S.svg">
 					<h3>Specific.</h3>
 					<p>Saying yes to one thing doesn’t mean they’ve said yes to others.</p>
 					<p>A consentful app only uses data the person has directly given, not data acquired through other means like scraping or buying, and uses it only in ways someone has consented to.
@@ -96,18 +96,24 @@
 			</ul>
 		</section>
 		<div class="fries_slant"></div>
-		<section class="FRIES_comment">
-			<p>We encourage you to use the FRIES framework to think through how consentful the technologies we’re using and building are, and how much we consider consent in the ways we interact with each other, both offline and online.
-			</p>
-		</section>
+		<div class="comment_parent">
+			<section class="FRIES_comment">
+				<p>We encourage you to use the FRIES framework to think through how consentful the technologies we’re using and building are, and how much we consider consent in the ways we interact with each other, both offline and online.
+				</p>
+			</section>
+		</div>
 		<div class="comment_slant"></div>
 		<section class="download_zine" id="download_zine">
 			<h2>Download the zine</h2>
 			<p>Note: we track the number of times these resources are downloaded but do not track any other information about visitors.</p>
 			<img src="img/download_section/BuildingConsentfulTech.png">
-			<p>Building Consentful Tech is a free 28 page zine for anyone who uses, makes, or is affected by digital technologies and wants to build a more consentful world. Intended as a community conversation starter rather than a comprehensive guide, it was written with input from dozens of technologists, designers, and community organizers.</p>
-			<a href="http://www.consentfultech.io/CTZine.pdf" download>Download	</a>
-			<p>Note: we track the number of times these resources are downloaded, but do not track any other information about visitors. </p>
+			<div class="zine_explanation">
+				<h3>Building Consentful Tech zine</h3>
+				<p>Building Consentful Tech is a free 28 page zine for anyone who uses, makes, or is affected by digital technologies and wants to build a more consentful world. Intended as a community conversation starter rather than a comprehensive guide, it was written with input from dozens of technologists, designers, and community organizers.</p>
+			</div>
+			<div class="download_btn_wrapper">
+				<a href="http://www.consentfultech.io/CTZine.pdf" download>Download</a>
+			</div>
 		</section>
 		<div class="download_slant"></div>
 		<section class="consentful_tech_in_action" id="consentful_tech_in_action">
@@ -127,6 +133,11 @@
 					<img src="img/in_action_section/Symposium.jpg">
 					<h3>Symposium at the New School’s Digital Equity Laboratory</h3>
 					<p>Read <a href="https://www.andalsotoo.net/2018/04/10/consentful-tech-provocation-at-the-new-schools-digital-equity-laboratory/">our brief provocation</a> at Technology and its Discontents: Building Power for a New  Paradigm at the New School’s Digital Equity Laboratory.</p>
+				</li>
+				<li>
+					<img src="img/in_action_section/Mozfest.jpg">
+					<h3>Consentful Tech workshop at Mozfest 2017</h3>
+					<p>Read about our <a href="https://www.andalsotoo.net/2018/01/03/consentful-tech-workshop-at-mozfest-2017/">consentful tech workshop</a> at Mozfest 2017 in London UK, where we also launched the Building Consentful Tech zine.</p>
 				</li>
 			</ul>
 		</section>
@@ -157,17 +168,20 @@
 		<section class="get_in_touch" id="get_in_touch">
 			<h2>Get in touch</h2>
 			<!-- fnContact captcha -->
-			<form action="https://fncontact.com/consentfultechproject/post">
-  				<input type="text" name="name" value="Name (optional)">
-  				<input type="text" name="email" value="Email (optional)">
- 				<textarea name="message" placeholder="Message">Message
- 				</textarea>
- 				<div id='fnContactCaptcha'></div>
- 				<script src='https://fncontact.com/captcha.js'></script>
- 				<input type="submit" value="Send" class="submit">
- 				<input type="reset" value="Clear" class="clear">
-			</form>
-			<h4 id="about_this_form">About this form</h4>
+			<div class="form_wrapper">
+				<form action="https://fncontact.com/consentfultechproject/post">
+	  				<input type="text" name="name" value="Name (optional)">
+	  				<input type="text" name="email" value="Email (optional)">
+	 				<textarea name="message" placeholder="Message">Message
+	 				</textarea>
+	 				<div id='fnContactCaptcha'></div>
+	 				<script src='https://fncontact.com/captcha.js'></script>
+	 				<input type="submit" value="Send" class="submit">
+	 				<input type="reset" value="Clear" class="clear">
+				</form>
+			</div>
+				<h4 id="about_this_form">About this form</h4>
+			
 			<section class="form_modal" id="form_modal">
 				<div class="form_modal_close"><span>x</span></div>
 				<p>We have chosen to use <a href="https://fncontact.com/">fnContact</a> for this form because it is private, anonymous, secure, and encrypted. We will not share any information you send via this form with any third parties.</p>

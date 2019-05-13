@@ -1,31 +1,27 @@
 
+/* ---- TYPPGRAPHY -------*/
+
 body {
 	font-family: 'Work Sans', sans-serif;
 	max-width: 100%;
+	margin:0;
 }
-
-/*header {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-	background-color: #F8E0FF;
-}
-*/
-
 
 h1 {
-	font-size: 3.125em;
-	line-height: 3.125em;
-	font-weight: bold;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	font-weight: semi-bold;
 	color: #472869;
-	display: inline-block;
+	display: inline;
+	margin-left: 1em;
 }
 
 h2 {
-	font-size: 3.75em;
+	font-size: 3.125em;
 	font-weight: bold;
-	line-height: 3.75em;
+	line-height: 3.125em;
 	color: #472869;
+	margin-left: 1em;
 }
 
 h3 {
@@ -41,6 +37,9 @@ h4 {
 p {
 	font-size: 1.25em;
 	line-height: 1.625em;
+	margin: 0 auto;
+	padding: 0.5em 0;
+	width: 85%;
 }
 
 img {
@@ -51,22 +50,419 @@ li {
 	list-style-type: none;
 }
 
-.nav {
+/*--- HEADER ---*/
+
+header {
+	position: relative;
+	background-color: #F8E0FF;
+	text-align: center;
+}
+
+header h2{
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -55%);
+	line-height: 1em;
+	max-width: 460px;
+	font-size: 3.5em;
+	margin: 0;
+
+}
+
+/*---- NAV SECTION (DESKTOP) -----*/
+
+nav {
 	display: grid;
+	background-color: #F8E0FF;
+}
+
+nav ul {
+	padding-left: 0;
+}
+
+nav li {
+	display: inline;
 }
 
 .nav li a {
-	text-decoration: none;
-	color:#fff;
+	text-decoration: underline;
+	color: #30023C;
+
 }
 
-header h2 {
-	text-decoration: none;
+.humburger,.humburger_close {
+	display: none;
+}
+
+
+/*---- GOOD DEGITAL CONSENT (DESKTOP) -------*/
+
+.good_digital_consent {
+		background-color: #F8E0FF;
+}
+
+.good_digital_consent h2::after {
+		content:"";
+		/*height:8px;*/
+		background-image: url(img/underlines/Underline-White.svg);
+		background-repeat: repeat-x;
+		background-size: contain;
+}
+
+.good_digital_consent p:first-child {
+	margin-top:0;
 }
 
 .good_digital_consent p:nth-child(2) {
 	font-weight: bold;
 }
+
+.good_digital_consent_slant {
+	    width: 100%;
+	    padding-bottom: 70.92%; /* must be width / 1.41 */
+	    margin-bottom: -70%;
+	    position: relative;
+	    overflow: hidden;
+	}
+
+.good_digital_consent_slant:before {
+	    content: '';
+	    background-color: #F8E0FF;
+	    height: 100%;
+	    width: 125%;
+	    position: absolute;
+	    top: -68%;
+	    transform-origin: 100% 0%;
+	    transform: rotate(4deg) skewX(0deg);
+	}
+
+.good_digital_consent_slant_2 {
+    	width: 100%;
+	    top:-15px;
+	    padding-bottom: 70.92%; /* must be width / 1.41 */
+	    margin-bottom: -60%;
+	    position: relative;
+	    overflow: hidden;
+	}
+
+.good_digital_consent_slant_2:before {
+	    content: '';
+	    position: absolute;
+	    width: 125%;
+	    height: 100%;
+	    top: 44%;
+	    left: -24%;
+	    background-color: #F8E0FF;
+	    transform-origin: 100% 0%;
+	    transform: rotate(90deg) skewX(-25deg);
+	}
+
+
+/*------ FRIES SECTION (DESKTOP) ------------*/
+
+.fries {
+	background-color: #30023C;
+	padding-top: 10px;
+
+}
+
+.fries h2 {
+	margin-bottom: 0;
+	margin-top: 2em;
+}
+
+.fries p, .fries h2, .fries h3 {
+	color: #fff;
+}
+
+.fries h3 {
+	text-decoration: underline;
+}
+
+.fries_intro {
+	width: 50%;
+	margin: 0.5em 3em;
+	margin-bottom: 2em;
+}
+
+.fries ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-left:0;
+	margin-top: 1em;
+	width: 90%;
+	margin: auto;
+}
+
+.fries li {
+	width: 32%;
+	margin: 0.5em 0.3em;
+
+}
+
+.fries li p {
+	margin: 0 auto;
+	line-height: 1.25em;
+	width: 100%;
+}
+
+.fries_img {
+	display: inline-block;
+	width: 100%;
+}
+
+.comment_parent {
+	position: relative;
+}
+.FRIES_comment {
+	background-color: #F8E0FF;
+	color:#30023C;
+	position: absolute;
+	width: 30%;
+	right: 0;
+	top: -450px;
+	padding: 3em 0;
+}
+
+.FRIES_comment::before {
+	content:"";
+	width: 102.2%;
+	top: -100px;
+	right:-1%;
+	position: absolute;
+	display: inline-block;
+	height: 160px;
+	background-color: #F8E0FF;
+	transform: rotate(-12deg) skewX(-12deg) ;
+	color:#30023C;
+
+}
+
+.FRIES_comment p {
+    padding: 100px 0;
+}
+
+.FRIES_comment::after {
+	content:"";
+	width: 102%;
+	bottom: -100px;
+	right:-1%;
+	position: absolute;
+	display: inline-block;
+	height: 160px;
+	background-color: #F8E0FF;
+	transform: rotate(12deg) skewX(12deg) ;
+	color:#30023C;
+
+}
+
+.comment_slant {
+    width: 100%;
+    padding-bottom: 70.92%; /* must be width / 1.41 */
+    margin-bottom: -70.92%;
+    position: relative;
+    overflow: hidden;
+    top: -2px;
+}
+
+.comment_slant:before {
+    content: '';
+    position: absolute;
+    top: -36%;
+    left: -50%;
+    width: 100%;
+    height: 43%;
+    background-color: #30023C;
+    transform-origin: 100% 0%;
+    transform: rotate(-11deg) skewX(63deg);
+    z-index: -1;
+}
+
+/*--------- DOWNLOAD ZINE SECTION (DESKTOP) -------------*/
+.download_zine {
+	padding-top: 20%;
+}
+
+.download_zine img {
+	max-width: 50%;
+}
+
+.zine_explanation {
+	display: inline-block;
+	width: 45%;
+}
+
+.download_btn_wrapper {
+	width: 100%;
+	text-align: center;
+}
+
+.download_btn_wrapper a {
+	text-decoration: none;
+	border: 1px solid #30023C;
+	background-color: #30023C;
+	color: #fff;
+	padding: 0.7em;
+	margin: 1em 0;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.download_slant {
+    width: 100%;
+    padding-bottom: 70.92%;
+    margin-bottom: -50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.download_slant:before {
+    content: '';
+    position: absolute;
+    top: 29%;
+    left: -10%;
+    width: 125%;
+    height: 100%;
+    background-color: #30023C;
+    transform-origin: 100% 0%;
+    transform: rotate(6deg) skewX(0deg);
+    z-index: -1;
+}
+
+/* ------- CONSENTFUL TECH IN ACTON SECTION (DESKTOP) ------ */
+.pointy-bottom {
+    width: 100%;
+    padding-bottom: 70.92%; /* must be width / 1.41 */
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -70.92%;
+    top:-2px;
+}
+
+.pointy-bottom:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #30023C;
+    transform-origin: 100% 0%;
+    transform: rotate(45deg) skewX(-37deg);
+}
+
+.consentful_tech_in_action {
+	background-color: #30023C;
+	padding-bottom: 10px;
+
+}
+
+.consentful_tech_in_action h2 {
+	color: #FFF;
+	margin-top:0;
+}
+.consentful_tech_in_action h3 {
+	text-transform: uppercase;
+	line-height: 1.25;
+	max-width: 80%;
+	margin: auto;
+	padding: 0.5em;
+}
+
+.consentful_tech_in_action p {
+	color: #000;
+	max-width: 80%;
+	margin: auto;
+	padding: 0 0.5em 1.5em 0.5em;
+}
+
+.consentful_tech_in_action ul {
+	padding-left:0;
+	margin-top:0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.consentful_tech_in_action li {
+	background-color: #F8E0FF;
+	color:#30023C;
+	margin: 1em;
+	width: 45%;
+}
+
+.consentful_tech_in_action li img {
+	display: block;
+	padding-top: 2.15em;
+	margin: auto;
+	max-width: 80%;
+}
+
+.pointy-bottom {
+    width: 100%;
+    padding-bottom: 70.92%; /* must be width / 1.41 */
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -70.92%;
+    top:-2px;
+}
+
+.pointy-bottom:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #30023C;
+    transform-origin: 100% 0%;
+    transform: rotate(45deg) skewX(-37deg);
+}
+
+/*------- SUPPORT SECTION (DESKTOP) -----*/
+	.support {
+		padding-top: 20%;
+	}
+
+	.support ul {
+		padding-left:0;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-evenly;
+	}
+
+	.support ul li {
+		width: 30%;
+		position: relative;
+		text-align: center;
+	}
+	
+	.support li a {
+		position: relative;
+		display: inline-block;
+	}
+
+	.support ul li img {
+		max-width: 100%;
+	}
+	.support li a h3 {
+		position: absolute;
+		margin: 0;
+		top: 50%;
+		left: 50%;
+		transform:translate(-50%, -50%);
+		text-align: center;
+		font-size: 1.5em;
+		line-height: 1.25em;
+		color: #fff;
+	}
+
+
+/*------ GET IN TOUCH SECTION (DESKTOP) -------*/
 
 .get_in_touch form input {
 	background-color: #F8E0FF;
@@ -81,6 +477,11 @@ header h2 {
 	overflow-x: hidden;
 	padding: 1em;
 	position: relative;
+}
+
+.form_wrapper {
+	text-align: center;
+
 }
 
 .get_in_touch form {
@@ -101,7 +502,7 @@ header h2 {
 .get_in_touch form .submit, .get_in_touch form .clear {
 	background-color: #30023C;
 	color: #fff;
-	width: 30%;
+	width: 15%;
 	margin: 20px;
 	margin-left: 0;
 	text-transform: uppercase;
@@ -133,19 +534,20 @@ header h2 {
 	text-align: right;
 }
 
-
+/*---- FOOTER AREA ----*/
 
 footer {
 	background-color: #30023C;
 	padding: 25px;
+	margin: 0 auto;
 
 }
 
 .footer_imgs {
-	width: 90%;
-	margin: 0 auto;
+	width: 80%;
 	text-align: left;
 	padding: 0px;
+	display: inline-block;
 }
 
 
@@ -159,93 +561,62 @@ footer_imgs a {
 
 footer p {
 	color: #fff;
-	width: 92%;
-	margin: 0 auto;
-	padding-top: 30px;
+	width: 70%;
+	padding: 30px 20px 0 20px;
+	display: inline-block;
+}
+@media only screen and (max-width: 1000px) {
+
+	.support li a h3 {
+		font-size: 1.2em;
+	}
+
 }
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 800px) {
+
+	header h2 {
+		font-size: 3em;
+		max-width: 390px;
+	}
+
+	.support li a h3 {
+		font-size: 1em;
+	}
+
+	.FRIES_comment::after, 
+	.FRIES_comment::before {
+		height: 125px;
+	}
+
+	.FRIES_comment {
+		padding: 40px 0;
+	}
+
+	.FRIES_comment p {
+   		padding: 0;
+	}
+	 .fries li {
+	 	width: 45%;
+	 }
+
+
+}
+
+@media only screen and (max-width: 650px) {
 	html {
 	    overflow-x: hidden;
-	}
-	/*.header_wrapper {
-		overflow-x: hidden;
-		position: absolute;
-		top: 30px;
-		height: 900px;
-		width: 100%;
-	}
-
-	header {
-	    display: grid;
-	    grid-template-columns: repeat(7, 20vw);
-	    grid-template-rows: 140px repeat(5, 1fr);
-	    background-color: #F8E0FF;
-	    position: absolute;
-	    margin-left: -20vw;
-	}
-	*/
-
-	header {
-	position: relative;
-	background-color: #F8E0FF;
-	text-align: center;
 	}
 
 	section {
 		padding: 1em 2em;
 	}
 
-/*	header img {
-	    justify-self: stretch;
-   		align-self: stretch;
-    	z-index: 1;
-	}*/
-
-	.header-f {
-		grid-row: 2 / 4;
-    	grid-column: 1 / 4;
-	}
-
-	.header-r {
-		grid-row: 1 / 3;
-    	grid-column: 3 / 6;
-	}
-
-	.header-i {
-		grid-row: 2 / 4;
-    	grid-column: 5 / 8;
-	}
-
-	.header-e {
-		grid-row: 3 / 6;
-  	 	grid-column: 2 / 5;
-   	 	padding-right: 15px;
-	}
-
-	.header-s {
-    	grid-row: 3 / 6;
-   		grid-column: 4 / 7;
-	    padding: 20px;
-	}
-
-/*	header h2 {
-	    text-decoration: none;
-	    grid-row: 3;
-	    grid-column: 3 / 6;
-	    justify-self: center;
-	    text-align: center;
-	    margin: 0;
-	    z-index: 2;
-	}*/
-
 	header h2 {
 		text-decoration: none;
-		position: absolute;
-		top: 33%;
-		width: 35%;
-		left: 32%;
 		font-size: 2em;
+		max-width: 260px;
 	}
 
 	nav {
@@ -258,6 +629,11 @@ footer p {
 		z-index: 10;
 		position: relative;
 		align-items: center;
+	}
+
+	.nav li a {
+	text-decoration: none;
+	color:#fff;
 	}
 
 	/* add to nav when humburger click */
@@ -352,6 +728,7 @@ footer p {
 		grid-column: 3;
 		grid-row-start: 1;
 		grid-row-end: 2;
+		display: block;
 	}
 
 	.humburger div {
@@ -367,11 +744,9 @@ footer p {
 	}
 
 
-	/*------ GOOD DIGITAL CONSENT SECTION -------*/
+	/*------ GOOD DIGITAL CONSENT SECTION 600px -------*/
 	
-	.good_digital_consent {
-		background-color: #F8E0FF;
-	}
+
 
 	.good_digital_consent_slant {
 	    width: 100%;
@@ -382,15 +757,8 @@ footer p {
 	}
 
 	.good_digital_consent_slant:before {
-	    content: '';
-	    background-color: #F8E0FF;
-	    height: 100%;
-	    width: 125%;
-	    position: absolute;
 	    top: -73%;
 	    left: -25%;
-	    transform-origin: 100% 0%;
-	    transform: rotate(4deg) skewX(0deg);
 	}
 
 	.good_digital_consent_slant_2 {
@@ -414,7 +782,7 @@ footer p {
 	    transform: rotate(90deg) skewX(-25deg);
 	}
 
-	/*------ FRIES SECTION -------*/
+	/*------ FRIES SECTION 600px -------*/
 
 	.fries{
 		background-color: #30023C;
@@ -437,23 +805,39 @@ footer p {
 	}
 
 	.fries ul {
-		padding-left:0;
+		display: block;
+		padding:0;
+		margin: 1em;
+	}
+
+	.fries li {
+		width: 90%;
+		margin: 0.5em;
 	}
 
 
-	.fries li img{
+	.fries_img{
 		display: block;
 		margin: 0 auto;
+		height: 35%;
+		vertical-align: middle;
 	}
 
 	.FRIES_comment {
-		color: #30023C;
-		background-color: #F8E0FF;
-		padding-top: 110px;
+		padding: 110px 0 0 0;
+		position: static;
+		width:100%;
+	}
+	.FRIES_comment::before {
+		display: none;
+	}
+
+	.FRIES_comment::after {
+		display: none;
 	}
 
 	.FRIES_comment p {
-		padding-top: 0;
+		padding-top: 1em;
 	}
 	.fries_slant {
 	    width: 100%;
@@ -475,6 +859,7 @@ footer p {
 	    background-color: #30023C;
 	    transform-origin: 100% 0%;
 	    transform: rotate(-10deg) skewX(-3deg);
+	    z-index: 1;
 	}
 
 	.comment_slant {
@@ -498,18 +883,8 @@ footer p {
 	    z-index: -1;
 	}
 
-	/*---- DOWNLOAD SECTION --------*/
+	/*---- DOWNLOAD SECTION 600px --------*/
 
-	.download_zine a {
-		text-decoration: none;
-		border: 1px solid #30023C;
-		background-color: #30023C;
-		color: #fff;
-		padding: 0.7em;
-		margin: 1em 0;
-		display: inline-block;
-		text-transform: uppercase;
-	}
 
 	.download_slant {
 	    width: 100%;
@@ -531,7 +906,15 @@ footer p {
 	    transform: rotate(6deg) skewX(0deg);
 	    z-index: -1;
 	}
-	/*---- CONSENTFUL TECH IN ACTION SECTION --------*/
+
+	.download_zine img {
+	max-width: 100%;
+	}
+
+	.zine_explanation {
+		width: 100%;
+	}
+	/*---- CONSENTFUL TECH IN ACTION SECTION 600px --------*/
 
 	.consentful_tech_in_action {
 		background-color: #30023C;
@@ -566,6 +949,7 @@ footer p {
 		background-color: #F8E0FF;
 		color:#30023C;
 		margin-top: 2em;
+		width: 100%;
 	}
 
 	.consentful_tech_in_action li img {
@@ -596,7 +980,7 @@ footer p {
 	    transform: rotate(45deg) skewX(-37deg);
 	}
 
-	/*------------- SUPPORT SECTION -------------------*/
+	/*------------- SUPPORT SECTION 600px -------------------*/
 	.support h2 {
 		margin-bottom: 0;
 		margin-top: 1.5em;
@@ -604,11 +988,14 @@ footer p {
 
 	.support ul {
 		padding-left:0;
+		display: block;
+		text-align: center;
 	}
 
-	.support li {
+	.support ul li {
 		padding-top: 0;
-		margin: 1.3em;
+		margin: 1.3em 0;
+		width: 100%;
 	}
 	.support li a{
 		position: relative;
@@ -627,7 +1014,7 @@ footer p {
 		color: #fff;
 	}
 
-	/*------- GET IN TOUCH SECTION --------------*/
+	/*------- GET IN TOUCH SECTION 600px --------------*/
 
 	section.get_in_touch {
 		padding-top: 0;
@@ -640,7 +1027,11 @@ footer p {
 @media only screen and (max-width: 530px) {
 	header h2 {
 		font-size: 1.9em;
-		top: 34%;
+		max-width: 250px;
+	}
+
+	.FRIES_comment p {
+		padding-top: 0;
 	}
 
 }
@@ -648,7 +1039,7 @@ footer p {
 @media only screen and (max-width: 485px) {
 	header h2 {
 		font-size: 1.4em;
-		top: 35%;
+		max-width: 180px;
 	}
 
 
@@ -669,25 +1060,26 @@ footer p {
 
 	header h2 {
 		font-size: 1.15em;
+		max-width: 150px;
 	}
 
 
 	.humburger {
 		margin: 5px 30px;
 	}
-	/*-------- FRIES COMMENT SECTION ------------------*/
+	/*-------- FRIES COMMENT SECTION 398px ------------------*/
 	.FRIES_comment {
 		padding-top: 70px;
 	}
 
-	/*------------- SUPPORT SECTION -------------------*/
+	/*------------- SUPPORT SECTION 398px -------------------*/
 	.support li a h3 {
 		font-size: 1.1em;
 	}
 	.support h2 {
 		margin-top: 0.7em;
 	}
-	/*--------------- FOOTER SECTION --------------------*/
+	/*--------------- FOOTER SECTION 398px --------------------*/
 
 	.footer_imgs img {
 		max-width: 40%;
@@ -712,3 +1104,6 @@ footer p {
 	}
 
 }
+
+
+
