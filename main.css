@@ -162,7 +162,7 @@ nav li {
 .fries h2 {
 	margin-bottom: 0;
 	margin-top: 2em;
-	line-height: 1em;
+	line-height: 0.5em;
 	display: inline-block;
 }
 
@@ -290,7 +290,7 @@ nav li {
 /*--------- DOWNLOAD ZINE SECTION (DESKTOP) -------------*/
 
 .download_zine h2 {
-	line-height: 1.5em;
+	line-height: 1em;
 	display: block;
 }
 .download_zine h2::after {
@@ -385,7 +385,7 @@ nav li {
 .consentful_tech_in_action h2 {
 	color: #FFF;
 	margin-top:0;
-	line-height: 1.5em;
+	line-height: 1em;
 	display: inline-block;
 }
 
@@ -465,7 +465,7 @@ nav li {
 
 	.support h2 {
 		display: inline-block;
-		line-height: 1.5em;
+		line-height: 1em;
 	}
 
 	.support h2::after {
@@ -518,7 +518,7 @@ nav li {
 
 .get_in_touch h2 {
 	display: inline-block;
-	line-height: 1.7em;
+	line-height: 1em;
 }
 
 .get_in_touch h2::after {
