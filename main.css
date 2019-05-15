@@ -70,6 +70,10 @@ header h2{
 
 }
 
+.header_mobile {
+	display: none;
+}
+
 /*---- NAV SECTION (DESKTOP) -----*/
 
 nav {
@@ -739,6 +743,14 @@ footer p {
 		text-decoration: none;
 		font-size: 2em;
 		max-width: 260px;
+	}
+
+	.header_desktop {
+		display: none;
+	}
+
+	.header_mobile {
+		display: block;
 	}
 
 	nav {
