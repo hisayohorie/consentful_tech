@@ -99,7 +99,6 @@ nav li {
 	display: none;
 }
 
-
 /*---- GOOD DEGITAL CONSENT (DESKTOP) -------*/
 
 .good_digital_consent {
@@ -218,7 +217,6 @@ nav li {
 .fries li {
 	width: 32%;
 	margin: 0.5em 0.3em;
-
 }
 
 .fries li p {
@@ -528,19 +526,56 @@ nav li {
 		width: 30%;
 		position: relative;
 		text-align: center;
+		padding: 8em 0;
 	}
 	
 	.support li a {
-		position: relative;
 		display: inline-block;
+		z-index: 100;
+		
 	}
 
+	.donate {
+		background-image: url(img/support/Shape1.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+	.donate:hover {
+		background-image: url(img/support/Shape1_hover.svg);
+
+	}
+	
+	.bootcamp_survey {
+		background-image: url(img/support/Shape2.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image: contain;		
+	}
+
+	.bootcamp_survey:hover {
+		background-image: url(img/support/Shape2_hover.svg);
+	}
+
+	.purchase_zine {
+		background-image: url(img/support/Shape3.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image: contain;
+	}
+
+	.purchase_zine:hover {
+		 background-image: url(img/support/Shape3_hover.svg);
+	}
 	.support ul li img {
 		max-width: 100%;
 	}
+
 	.support li a h3 {
 		position: absolute;
-		margin: 0;
+		margin: 0.5em;
+		width: 30%;
 		top: 50%;
 		left: 50%;
 		transform:translate(-50%, -50%);
@@ -695,6 +730,22 @@ footer p {
 
 	.support li a h3 {
 		font-size: 1.2em;
+		width: 50%;
+	}
+
+	.support ul li {
+		padding: 6em 0;
+		background-size: contain;
+	}
+
+	.donate, .bootcamp_survey, .purchase_zine {
+		background-size: 75%
+	}
+}
+
+@media only screen and (max-width: 900px){
+	.donate, .bootcamp_survey, .purchase_zine {
+		background-size: 70%
 	}
 
 }
@@ -723,11 +774,14 @@ footer p {
 	.FRIES_comment p {
    		padding: 0;
 	}
-	 .fries li {
+	
+	.fries li {
 	 	width: 45%;
-	 }
-
-
+	}
+	
+	.support ul li {
+		padding: 4.5em 0;
+	}
 }
 
 @media only screen and (max-width: 650px) {
@@ -1144,12 +1198,12 @@ footer p {
 	}
 
 	.support ul li {
-		padding-top: 0;
-		margin: 1.3em 0;
+		padding:7em 0;
+		margin: 1em 0;
 		width: 100%;
 	}
 	.support li a{
-		position: relative;
+		/*position: relative;*/
 		display: inline-block;
 	}
 
@@ -1163,6 +1217,7 @@ footer p {
 		font-size: 1.3em;
 		line-height: 1.25em;
 		color: #fff;
+		width: 30%;
 	}
 
 	/*------- GET IN TOUCH SECTION 600px --------------*/
