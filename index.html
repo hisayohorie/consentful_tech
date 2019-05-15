@@ -45,9 +45,11 @@
 		<div class="good_digital_consent_slant"></div>
 		<div class="good_digital_consent_slant_2"></div>
 		<section class="fries" id="fries">
-			<h2>Good digital consent is...</h2>
-			<p class="fries_intro">The Consentful Tech Project’s definition of good digital consent is adapted from Planned Parenthood’s definition of sexual consent, which abbreviates to the easy-to-remember, tasty acronym “FRIES.” According to this definition, consent must be:
-			</p>
+			<div class="fries_intro_wrapper">
+				<h2>Good digital consent is...</h2>
+				<p class="fries_intro">The Consentful Tech Project’s definition of good digital consent is adapted from Planned Parenthood’s definition of sexual consent, which abbreviates to the easy-to-remember, tasty acronym “FRIES.” According to this definition, consent must be:
+				</p>
+			</div>
 			<ul>
 				<li>
 					<img class="fries_img" src="img/FRIES/FRIES-F.svg">
@@ -99,8 +101,10 @@
 		</div>
 		<div class="comment_slant"></div>
 		<section class="download_zine" id="download_zine">
-			<h2>Download the zine</h2>
-			<p>Note: we track the number of times these resources are downloaded but do not track any other information about visitors.</p>
+			<div class="download_heading">
+				<h2>Download the zine</h2>
+				<p>Note: we track the number of times these resources are downloaded but do not track any other information about visitors.</p>
+			</div>
 			<img src="img/download_section/BuildingConsentfulTech.png">
 			<div class="zine_explanation">
 				<h3>Building Consentful Tech zine</h3>
@@ -161,22 +165,27 @@
 			</ul>
 		</section>
 		<section class="get_in_touch" id="get_in_touch">
-			<h2>Get in touch</h2>
-			<!-- fnContact captcha -->
-			<div class="form_wrapper">
-				<form action="https://fncontact.com/consentfultechproject/post">
-	  				<input type="text" name="name" value="Name (optional)">
-	  				<input type="text" name="email" value="Email (optional)">
-	 				<textarea name="message" placeholder="Message">Message
-	 				</textarea>
-	 				<div id='fnContactCaptcha'></div>
-					<h4 id="about_this_form">About this form</h4>
-	 				<script src='https://fncontact.com/captcha.js'></script>
-	 				<div class="form_buttons">
-	 					<input type="submit" value="Send" class="submit">
-	 					<input type="reset" value="Clear" class="clear">
-	 				</div>
-				</form>
+			<div class="get_in_touch_section_wrapper">
+				<h2>Get in touch</h2>
+				<!-- fnContact captcha -->
+				<div class="form_wrapper">
+					<form action="https://fncontact.com/consentfultechproject/post">
+						<label>Name (optional)</label>
+		  				<input type="text" name="name" value="Name">
+		  				<label>Email (optional)</label>
+		  				<input type="text" name="email" value="Email (optional)">
+		  				<label>Message</label>
+		 				<textarea name="message" placeholder="Message">Message
+		 				</textarea>
+		 				<div id='fnContactCaptcha'></div>
+		 				<script src='https://fncontact.com/captcha.js'></script>
+		 				<div class="form_buttons">
+		 					<input type="submit" value="Send" class="submit">
+		 					<input type="reset" value="Clear" class="clear">
+		 				</div>
+					</form>
+				</div>
+				<h4 id="about_this_form">About this form</h4>
 			</div>
 			
 			<section class="form_modal" id="form_modal">

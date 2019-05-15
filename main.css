@@ -102,6 +102,9 @@ nav li {
 		background-color: #F8E0FF;
 }
 
+.good_digital_consent p {
+	color: #30023C;
+}
 .good_digital_consent p:first-child {
 	margin-top:0;
 }
@@ -161,6 +164,7 @@ nav li {
 
 .fries h2 {
 	margin-bottom: 0;
+	margin-left: 0;
 	margin-top: 2em;
 	line-height: 0.5em;
 	display: inline-block;
@@ -174,7 +178,7 @@ nav li {
     height: 10px;
 	display: inline-block;
 	padding: 0;
-	width:90%;
+	width:100%;
 }
 
 
@@ -188,8 +192,13 @@ nav li {
 
 .fries_intro {
 	width: 50%;
-	margin: 1em 3em;
+	margin: 1em 0;
 	margin-bottom: 2em;
+}
+
+.fries_intro_wrapper {
+	margin: 1em 5em;
+
 }
 
 .fries ul {
@@ -292,6 +301,7 @@ nav li {
 .download_zine h2 {
 	line-height: 1em;
 	display: block;
+	margin: 0;
 }
 .download_zine h2::after {
     content: "";
@@ -304,17 +314,31 @@ nav li {
 	width:22%;
 }
 
+.download_heading {
+	margin-left: 1.5em;
+}
+
+.download_heading p{
+	margin: 0.5em 0;
+}
+
 .download_zine {
 	padding-top: 20%;
 }
 
 .download_zine img {
-	max-width: 50%;
+	max-width: 45%;
+	margin-left: 1.5em;
 }
 
 .zine_explanation {
 	display: inline-block;
 	width: 45%;
+	margin: 0 1em;
+}
+
+.zine_explanation p {
+	margin: 0;
 }
 
 .download_btn_wrapper {
@@ -519,6 +543,8 @@ nav li {
 .get_in_touch h2 {
 	display: inline-block;
 	line-height: 1em;
+	margin: 0;
+	padding-bottom:0.5em;
 }
 
 .get_in_touch h2::after {
@@ -531,6 +557,9 @@ nav li {
 	padding: 0;
 	width:100%;
 }
+.get_in_touch_section_wrapper{
+	margin: 0 2em;
+}
 
 .get_in_touch form input {
 	background-color: #F8E0FF;
@@ -538,7 +567,12 @@ nav li {
 	width: 80%;
 	margin: 10px 0;
 	border: solid 2px #777;
+}
 
+.get_in_touch form label {
+	display: block;
+	padding: 0.5em 0;
+	color: #30023C;
 }
 
 .get_in_touch {
