@@ -346,6 +346,11 @@ nav li {
 	text-align: center;
 }
 
+.download_btn_wrapper a:hover {
+	background: #CD6CE7;
+	border: 1px solid #CD6CE7;
+}
+
 .download_btn_wrapper a {
 	text-decoration: none;
 	border: 1px solid #30023C;
@@ -459,6 +464,10 @@ nav li {
 	padding-top: 2.15em;
 	margin: auto;
 	max-width: 80%;
+}
+
+.consentful_tech_in_action a, .consentful_tech_in_action a:visited {
+	color: #000;
 }
 
 .pointy-bottom {
@@ -610,6 +619,14 @@ nav li {
 	text-transform: uppercase;
 	border: none;
 	padding: 20px;
+}
+
+.get_in_touch form .submit:hover{
+	background-color: #CD6CE7;
+}
+
+.get_in_touch form .clear:hover{
+	background-color: #CD6CE7;
 }
 
 #fnContactCaptcha {
