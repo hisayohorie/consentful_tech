@@ -7,10 +7,14 @@ body {
 	margin:0;
 }
 
+main {
+	position: relative;
+	top: -4em;
+}
+
 h1 {
-	font-size: 1.5em;
+	font-size: 2em;
 	line-height: 1.5em;
-	font-weight: semi-bold;
 	color: #472869;
 	display: inline;
 	margin-left: 1em;
@@ -56,6 +60,7 @@ header {
 	position: relative;
 	background-color: #F8E0FF;
 	text-align: center;
+	z-index: 2
 }
 
 header h2{
@@ -64,8 +69,8 @@ header h2{
 	left: 50%;
 	transform: translate(-50%, -55%);
 	line-height: 1em;
-	max-width: 460px;
-	font-size: 3.5em;
+	max-width: 448px;
+	font-size: 4em;
 	margin: 0;
 
 }
@@ -78,11 +83,18 @@ header h2{
 
 nav {
 	display: grid;
+	grid-template-columns: max-content 1fr 10fr;
+	align-items: center;
 	background-color: #F8E0FF;
 }
 
 nav ul {
 	padding-left: 0;
+	display: flex;
+	justify-content: space-evenly;
+	grid-column: 3;
+	font-weight: bold;
+	font-size: 1.5em;
 }
 
 nav li {
@@ -92,7 +104,9 @@ nav li {
 .nav li a {
 	text-decoration: underline;
 	color: #30023C;
-
+}
+.nav li a:hover {
+	color: #CD6CE7;
 }
 
 .humburger,.humburger_close {
@@ -102,11 +116,15 @@ nav li {
 /*---- GOOD DEGITAL CONSENT (DESKTOP) -------*/
 
 .good_digital_consent {
-		background-color: #F8E0FF;
+	background-color: #F8E0FF;
+	position: relative;
+	z-index: 1;
 }
 
 .good_digital_consent p {
 	color: #30023C;
+	position: relative;
+	top: 4em;
 }
 .good_digital_consent p:first-child {
 	margin-top:0;
@@ -117,12 +135,13 @@ nav li {
 }
 
 .good_digital_consent_slant {
-	    width: 100%;
-	    padding-bottom: 70.92%; /* must be width / 1.41 */
-	    margin-bottom: -70%;
-	    position: relative;
-	    overflow: hidden;
-	}
+    width: 100%;
+    padding-bottom: 70.92%; /* must be width / 1.41 */
+    margin-bottom: -70%;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
 
 .good_digital_consent_slant:before {
 	    content: '';
@@ -130,7 +149,7 @@ nav li {
 	    height: 100%;
 	    width: 125%;
 	    position: absolute;
-	    top: -68%;
+	    top: -71%;
 	    transform-origin: 100% 0%;
 	    transform: rotate(4deg) skewX(0deg);
 	}
@@ -200,8 +219,8 @@ nav li {
 }
 
 .fries_intro_wrapper {
-	margin: 1em 5em;
-
+	margin: 1em 0em;
+    padding-left: 4vw;
 }
 
 .fries ul {
@@ -212,11 +231,13 @@ nav li {
 	margin-top: 1em;
 	width: 90%;
 	margin: auto;
+	position: relative;
+	z-index: 3;
 }
 
 .fries li {
-	width: 32%;
-	margin: 0.5em 0.3em;
+	width: 30%;
+	margin: 0.5em 1em;
 }
 
 .fries li p {
@@ -236,25 +257,30 @@ nav li {
 }
 .FRIES_comment {
 	background-color: #F8E0FF;
-	color:#30023C;
+	color: #30023C;
 	position: absolute;
 	width: 30%;
 	right: 0;
-	top: -450px;
-	padding: 3em 0;
+	top: -750px;
+	padding: 6em 0;
+	overflow: hidden;
 }
 
-.FRIES_comment::before {
-	content:"";
-	width: 102.2%;
-	top: -100px;
-	right:-1%;
+.FRIES_comment_slanted_top {
+	overflow: hidden;
+}
+
+.FRIES_comment_slanted_top::before {
+	content: "";
+	width: 115%;
+	top: -15%;
+	right: -5px;
 	position: absolute;
 	display: inline-block;
-	height: 160px;
-	background-color: #F8E0FF;
-	transform: rotate(-12deg) skewX(-12deg) ;
-	color:#30023C;
+	height: 175px;
+	background-color: #30023C;
+	transform: rotate(-15deg) skewX(-12deg) ;
+	color: #30023C;
 
 }
 
@@ -262,18 +288,22 @@ nav li {
     padding: 100px 0;
 }
 
-.FRIES_comment::after {
-	content:"";
-	width: 102%;
-	bottom: -100px;
-	right:-1%;
+.FRIES_comment_slanted_bottom {
+	overflow: hidden;
+}
+
+.FRIES_comment_slanted_bottom::after {
+	content: "";
+	width: 115%;
+	bottom: -15%;
+	right: -5px;
 	position: absolute;
 	display: inline-block;
-	height: 160px;
-	background-color: #F8E0FF;
-	transform: rotate(12deg) skewX(12deg) ;
-	color:#30023C;
-
+	height: 175px;
+	background-color: #30023C;
+	transform: rotate(15deg) skewX(12deg) ;
+	color: #30023C;
+	z-index: 0;
 }
 
 .comment_slant {
@@ -288,14 +318,14 @@ nav li {
 .comment_slant:before {
     content: '';
     position: absolute;
-    top: -36%;
+    top: -29%;
     left: -50%;
     width: 100%;
     height: 43%;
     background-color: #30023C;
     transform-origin: 100% 0%;
     transform: rotate(-11deg) skewX(63deg);
-    z-index: -1;
+    z-index: 2;
 }
 
 /*--------- DOWNLOAD ZINE SECTION (DESKTOP) -------------*/
@@ -305,7 +335,12 @@ nav li {
 	display: block;
 	margin: 0;
 }
-.download_zine h2::after {
+
+.download_zine h2 span {
+	display: inline-block;
+}
+
+.download_zine h2 .underline::after {
     content: "";
     background-image: url(img/underlines/Underlin-Purple.svg);
     background-repeat: repeat-x;
@@ -313,11 +348,12 @@ nav li {
     height: 10px;
 	display: block;
 	padding: 0;
-	width:22%;
+	width: 100%;
+	margin-top: 0.25em;
 }
 
 .download_heading {
-	margin-left: 1.5em;
+	padding-left: 4vw;
 }
 
 .download_heading p{
@@ -326,6 +362,9 @@ nav li {
 
 .download_zine {
 	padding-top: 20%;
+	background: #fff;
+	position: relative;
+	z-index: 1;
 }
 
 .download_zine img {
@@ -385,7 +424,7 @@ nav li {
     z-index: -1;
 }
 
-/* ------- CONSENTFUL TECH IN ACTON SECTION (DESKTOP) ------ */
+/* ------- CONSENTFUL TECH IN ACTION SECTION (DESKTOP) ------ */
 .pointy-bottom {
     width: 100%;
     padding-bottom: 70.92%; /* must be width / 1.41 */
@@ -418,6 +457,8 @@ nav li {
 	margin-top:0;
 	line-height: 1em;
 	display: inline-block;
+	margin-left: 0;
+	padding-left: 4vw;
 }
 
 .consentful_tech_in_action h2::after {
@@ -447,29 +488,33 @@ nav li {
 
 .consentful_tech_in_action ul {
 	padding-left:0;
-	margin-top:0;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: center;
+	margin: 0 3vw;
 }
 
 .consentful_tech_in_action li {
 	background-color: #F8E0FF;
 	color:#30023C;
-	margin: 1em;
-	width: 45%;
+	margin: 1em 1vw;
+	width: 45vw;
 }
 
 .consentful_tech_in_action li img {
 	display: block;
-	padding-top: 2.15em;
+	padding-top: 4.5vw;
 	margin: auto;
 	max-width: 80%;
 }
 
 .consentful_tech_in_action a, .consentful_tech_in_action a:visited {
 	color: #000;
+}
+
+.consentful_tech_in_action a:hover {
+	color: #CD6CE7;
 }
 
 .pointy-bottom {
@@ -501,6 +546,8 @@ nav li {
 	.support h2 {
 		display: inline-block;
 		line-height: 1em;
+		padding-left: 4vw;
+		margin-left: 0;
 	}
 
 	.support h2::after {
@@ -580,7 +627,7 @@ nav li {
 		left: 50%;
 		transform:translate(-50%, -50%);
 		text-align: center;
-		font-size: 1.5em;
+		font-size: 1.35em;
 		line-height: 1.25em;
 		color: #fff;
 	}
@@ -592,7 +639,8 @@ nav li {
 	display: inline-block;
 	line-height: 1em;
 	margin: 0;
-	padding-bottom:0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 4vw;
 }
 
 .get_in_touch h2::after {
@@ -605,16 +653,13 @@ nav li {
 	padding: 0;
 	width:100%;
 }
-.get_in_touch_section_wrapper{
-	margin: 0 2em;
-}
 
 .get_in_touch form input {
 	background-color: #F8E0FF;
 	padding: 10px;
-	width: 80%;
+	width: 50%;
 	margin: 10px 0;
-	border: solid 2px #777;
+	border: solid 1px #777;
 }
 
 .get_in_touch form label {
@@ -625,34 +670,32 @@ nav li {
 
 .get_in_touch {
 	overflow-x: hidden;
-	padding: 1em;
 	position: relative;
 }
 
 .form_wrapper {
 	text-align: left;
-
 }
 
 .get_in_touch form {
-	width: 100vw;
-	margin: 0 auto;
+	padding: 0 4vw;
 }
 
 .get_in_touch form textarea {
-	width: 80%;
+	width: 50%;
 	height: 100px;
 	padding: 10px;
 	background-color: #F8E0FF;
 	text-align: left;
 	resize: none;
-	border: solid 2px #777;
+	border: solid 1px #777;
+	margin: 10px 0;
 }
 
 .get_in_touch form .submit, .get_in_touch form .clear {
 	background-color: #30023C;
 	color: #fff;
-	width: 15%;
+	max-width: 150px;
 	margin: 20px;
 	margin-left: 0;
 	text-transform: uppercase;
@@ -666,6 +709,11 @@ nav li {
 
 .get_in_touch form .clear:hover{
 	background-color: #CD6CE7;
+}
+
+.get_in_touch_form_footer {
+	display: flex;
+	align-items: center;
 }
 
 #fnContactCaptcha {
@@ -690,6 +738,10 @@ nav li {
 	text-decoration: underline;
 }
 
+.get_in_touch h4:hover {
+	color:#CD6CE7;
+}
+
 
 .form_modal_close {
 	text-align: right;
@@ -701,19 +753,22 @@ footer {
 	background-color: #30023C;
 	padding: 25px;
 	margin: 0 auto;
-
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    grid-column-gap: 20px; 
 }
 
 .footer_imgs {
-	width: 80%;
 	text-align: left;
 	padding: 0px;
 	display: inline-block;
 }
 
 
-footer_imgs a {
-	display: inline;
+.footer_imgs a {
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .AATLogo {
@@ -722,11 +777,41 @@ footer_imgs a {
 
 footer p {
 	color: #fff;
-	width: 70%;
-	padding: 30px 20px 0 20px;
 	display: inline-block;
+	width: 100%;
 }
+
+@media only screen and (max-width: 1600px) {
+	nav h1 {
+    	font-size: 1.5em;
+    }
+
+    nav ul {
+    	font-size: 1em;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+    nav ul {
+    	font-size: 0.75em;
+	}
+}
+
 @media only screen and (max-width: 1000px) {
+    nav {
+    	grid-template-columns: max-content 1fr;
+    	grid-column-gap: 1em;
+    }
+
+   
+
+    nav ul {
+    	grid-column: 2;
+    }
+
+	header h2 {
+		font-size: 3.5em;
+	}
 
 	.support li a h3 {
 		font-size: 1.2em;
@@ -744,6 +829,21 @@ footer p {
 }
 
 @media only screen and (max-width: 900px){
+
+	nav h1 {
+		font-size: 1em;
+		margin-left: 0.3em;
+	}
+
+	main {
+		position: relative;
+		top: -2em;
+	}
+
+	.good_digital_consent p {
+		top: 2em;	
+	}
+
 	.donate, .bootcamp_survey, .purchase_zine {
 		background-size: 70%
 	}
@@ -752,24 +852,29 @@ footer p {
 
 
 @media only screen and (max-width: 800px) {
+	nav h1 {
+	    font-size: 0.75em;
+	    margin-left: 0.2em;
+	}
 
 	header h2 {
-		font-size: 3em;
-		max-width: 390px;
+		font-size: 2.5em;
+		max-width: 325px;
 	}
+
+	.fries h2 {
+		font-size: 2.5em;
+	}
+
 
 	.support li a h3 {
 		font-size: 1em;
 	}
 
-	.FRIES_comment::after, 
+	/*.FRIES_comment::after, 
 	.FRIES_comment::before {
 		height: 125px;
-	}
-
-	.FRIES_comment {
-		padding: 40px 0;
-	}
+	}*/
 
 	.FRIES_comment p {
    		padding: 0;
@@ -790,13 +895,15 @@ footer p {
 	}
 
 	section {
-		padding: 1em 2em;
+		padding: 1em 25px;
 	}
 
 	header h2 {
 		text-decoration: none;
-		font-size: 2em;
+		font-size: 3em;
 		max-width: 260px;
+		top: 50%;
+		transform: translate(-50%, -50%);
 	}
 
 	.header_desktop {
@@ -872,7 +979,7 @@ footer p {
 	p {
 		font-size: 1em;
 		color: #30023C;
-		line-height: 1.45em;
+		line-height: 1.2em;
 	}
 
 	/*ul.nav */
@@ -980,6 +1087,7 @@ footer p {
 		max-width: 380px;
 		font-size: 2.5em;
 		line-height: 1.7em;
+		margin-top: 1.75em;
 	}
 
 	.fries h2::after {
@@ -1078,6 +1186,9 @@ footer p {
 
 	/*---- DOWNLOAD SECTION 600px --------*/
 
+	.download_heading {
+		padding-left: 0;
+	}
 
 	.download_slant {
 	    width: 100%;
@@ -1100,21 +1211,39 @@ footer p {
 	    z-index: -1;
 	}
 	
-	.download_zine h2::after {
+	.download_zine h2 {
+		text-decoration: none;
+	}
+
+	.download_zine h2 .underline::after {
 		display: none;
 	}
+
+	.download_zine h2 span::after {
+	    content: "";
+	    background-image: url(img/underlines/Underlin-Purple.svg);
+	    background-repeat: repeat-x;
+	    background-size: contain;
+	    height: 10px;
+	    display: block;
+	    padding: 0;
+	    width: 100%;
+	    margin-top: 0.25em;
+	}
+
 	.download_zine img {
-	max-width: 100%;
+		max-width: 100%;
 	}
 
 	.zine_explanation {
 		width: 100%;
+		margin: 0;
 	}
 	/*---- CONSENTFUL TECH IN ACTION SECTION 600px --------*/
 
 	.consentful_tech_in_action {
 		background-color: #30023C;
-
+		padding: 1em 10px;
 	}
 
 	.consentful_tech_in_action h2 {
@@ -1149,7 +1278,7 @@ footer p {
 	.consentful_tech_in_action li {
 		background-color: #F8E0FF;
 		color:#30023C;
-		margin-top: 2em;
+		margin: 1em 1vw;
 		width: 100%;
 	}
 
@@ -1185,6 +1314,7 @@ footer p {
 	.support h2 {
 		margin-bottom: 0;
 		margin-top: 1.5em;
+		padding-left: 0;
 	}
 
 	.support h2::after {
@@ -1227,13 +1357,41 @@ footer p {
 	}
 	.get_in_touch h2 {
 		margin:20px 0;
+		padding-left: 0;
 	}
 	.get_in_touch h2::after {
 		display: none;
 	}
 
+	.get_in_touch form {
+		max-width: 90%;
+		padding: 0;
+	}
+
+	.get_in_touch form input, .get_in_touch form textarea {
+		border-width: 2px;
+		width: 90%;
+	}
+
+	.get_in_touch_form_footer {
+		display: block;
+	}
+
+	.get_in_touch_form_footer h4 {
+		text-decoration: none;
+	}
+
 	.get_in_touch form .submit, .get_in_touch form .clear {
-		width: 30%;
+		max-width: 125px;
+	}
+
+	footer {
+		display: block;
+		padding: 75px;
+	}
+
+	footer p {
+		padding-top: 50px;
 	}
 }
 
@@ -1241,14 +1399,11 @@ footer p {
 	header h2 {
 		font-size: 1.9em;
 		max-width: 250px;
+
 	}
 
 	.FRIES_comment p {
 		padding-top: 0;
-	}
-
-	.get_in_touch form .submit, .get_in_touch form .clear {
-		width: 35%;
 	}
 
 }
@@ -1258,11 +1413,11 @@ footer p {
 		font-size: 1.4em;
 		max-width: 180px;
 	}
-	
-	.get_in_touch form .submit, .get_in_touch form .clear {
-		width: 40%;
-	}
 
+	.consentful_tech_in_action li {
+		margin: 0.75em 1vw;
+	}
+	
 }
 
 @media only screen and (max-width: 433px) {
@@ -1320,6 +1475,11 @@ footer p {
 
 	.humburger_close {
 		grid-column: 2;
+	}
+
+	.consentful_tech_in_action h2 {
+		padding-left: 4vw;
+		font-size: 2em;
 	}
 
 	.support li a h3 {

@@ -7,7 +7,10 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="main.css">	
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
-	<script src="consentful_tech.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+ 	crossorigin="anonymous"></script>	
+  	<script src="consentful_tech.js"></script>
 </head>
 <body>
 	<nav class="modal_close">
@@ -19,10 +22,10 @@
 			<span><img src="img/hamburger_menu/x.svg"></span>
 		</section>
 		<ul class="nav">
-			<li><a href="#fries">Good digital consent is..</a></li>
-			<li><a href="#download_zine">Download the zine</a></li>
+			<li><a href="#fries">Good digital consent</a></li>
+			<li><a href="#download_zine">Zine</a></li>
 			<li><a href="#consentful_tech_in_action">Consentful tech in action</a></li>
-			<li><a href="#support">How to support this work</a></li>
+			<li><a href="#support">Support</a></li>
 			<li><a href="#get_in_touch">Get in touch</a></li>
 		</ul>
 	</nav>
@@ -96,14 +99,16 @@
 		<div class="fries_slant"></div>
 		<div class="comment_parent">
 			<section class="FRIES_comment">
+				<div class="FRIES_comment_slanted_top"></div>
 				<p>We encourage you to use the FRIES framework to think through how consentful the technologies we’re using and building are, and how much we consider consent in the ways we interact with each other, both offline and online.
 				</p>
+				<div class="FRIES_comment_slanted_bottom"></div>
 			</section>
 		</div>
 		<div class="comment_slant"></div>
 		<section class="download_zine" id="download_zine">
 			<div class="download_heading">
-				<h2>Download the zine</h2>
+				<h2><span><span class='underline'>Download</span> the zine</span></h2>
 				<p>Note: we track the number of times these resources are downloaded but do not track any other information about visitors.</p>
 			</div>
 			<img src="img/download_section/BuildingConsentfulTech.png">
@@ -169,13 +174,15 @@
 				<div class="form_wrapper">
 					<form action="https://fncontact.com/consentfultechproject/post">
 						<label>Name (optional)</label>
-		  				<input type="text" name="name" value="Name">
+		  				<input type="text" name="name" placeholder="Name">
 		  				<label>Email (optional)</label>
-		  				<input type="text" name="email" value="Email (optional)">
+		  				<input type="text" name="email" placeholder="Email">
 		  				<label>Message</label>
-		 				<textarea name="message" placeholder="Message">Message
-		 				</textarea>
-		 				<div id='fnContactCaptcha'></div>
+		 				<textarea name="message" placeholder="Message"></textarea>
+		 				<div class="get_in_touch_form_footer">
+		 					<div id='fnContactCaptcha'></div>
+							<h4 id="about_this_form">About this form</h4>
+		 				</div>
 		 				<script src='https://fncontact.com/captcha.js'></script>
 		 				<div class="form_buttons">
 		 					<input type="submit" value="Send" class="submit">
@@ -183,7 +190,6 @@
 		 				</div>
 					</form>
 				</div>
-				<h4 id="about_this_form">About this form</h4>
 			</div>
 			
 			<section class="form_modal" id="form_modal">
