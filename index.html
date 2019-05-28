@@ -15,22 +15,24 @@
 </head>
 <body>
 	<div class="container">
-	<nav class="modal_close">
-		<h1 class="title_underline">The Consentful Tech Project</h1>
-		<section class="humburger" id="humburger">
-			<img src="img/hamburger_menu/hamburger.svg">
-		</section>
-		<section class="humburger_close" id="humburger_close">
-			<span><img src="img/hamburger_menu/x.svg"></span>
-		</section>
-		<ul class="nav">
-			<li><a href="#fries">Good digital consent</a></li>
-			<li><a href="#download_zine">Zine</a></li>
-			<li><a href="#consentful_tech_in_action">Consentful tech in action</a></li>
-			<li><a href="#support">Support</a></li>
-			<li><a href="#get_in_touch">Get in touch</a></li>
-		</ul>
-	</nav>
+	<div class="nav_container">
+		<nav class="modal_close">
+			<h1 class="title_underline">The Consentful Tech Project</h1>
+			<section class="humburger" id="humburger">
+				<img src="img/hamburger_menu/hamburger.svg">
+			</section>
+			<section class="humburger_close" id="humburger_close">
+				<span><img src="img/hamburger_menu/x.svg"></span>
+			</section>
+			<ul class="nav">
+				<li><a href="#fries">Good digital consent</a></li>
+				<li><a href="#download_zine">Zine</a></li>
+				<li><a href="#consentful_tech_in_action">Consentful tech in action</a></li>
+				<li><a href="#support">Support</a></li>
+				<li><a href="#get_in_touch">Get in touch</a></li>
+			</ul>
+		</nav>
+	</div>
 	<div class="header_wrapper">
 	<header>
 		<img src="img/header_section/HeaderGraphicDesktop.svg" class="header_desktop">
@@ -97,16 +99,15 @@
 					</p>
 				</li>
 			</ul>
-		</section>
 		<div class="fries_slant"></div>
-		<div class="comment_parent">
 			<section class="FRIES_comment">
-				<div class="FRIES_comment_slanted_top"></div>
+				<!-- <div class="FRIES_comment_slanted_top"></div> -->
 				<p>We encourage you to use the FRIES framework to think through how consentful the technologies we’re using and building are, and how much we consider consent in the ways we interact with each other, both offline and online.
 				</p>
-				<div class="FRIES_comment_slanted_bottom"></div>
+				<!-- <div class="FRIES_comment_slanted_bottom"></div> -->
 			</section>
-		</div>
+		</section>
+
 		<div class="comment_slant"></div>
 		<section class="download_zine" id="download_zine">
 			<div class="download_heading">
@@ -123,6 +124,7 @@
 			</div>
 		</section>
 		<div class="download_slant"></div>
+		<div class="in_action_wrapper">
 		<section class="consentful_tech_in_action" id="consentful_tech_in_action">
 			<h2 class="underline-white">Consentful Tech in Action</h2>
 			<ul>
@@ -148,6 +150,7 @@
 				</li>
 			</ul>
 		</section>
+		</div>
 		<div class="pointy-bottom"></div>
 		<section class="support" id="support">
 			<h2 class="underline-purple">Ways to support this work</h2>
@@ -200,13 +203,16 @@
 			</section>
 		</section>
 	</main>
-	<footer>
-		<div class="footer_imgs">
-			<a href="https://www.alliedmedia.org/sponsored-projects"><img src="img/footer_section/SponsoredProjects_badge_F2.png"></a>
-			<a href="https://www.andalsotoo.net/"><img src="img/footer_section/AATLogo.svg" class="AATLogo"></a>
-		</div>
-		<p>Sponsored by Allied Media Projects. Supported by the Digital Rights Community Grant Program, a partnership between Digital Justice Lab, Tech Reset Canada and Centre for Digital Rights. Design support from And Also Too.</p>
-	</footer>
+	<div class="footer_wrapper">
+		<footer>
+			<div class="footer_imgs">
+				<a href="https://www.alliedmedia.org/sponsored-projects"><img src="img/footer_section/SponsoredProjects_badge_F2.png"></a>
+				<a href="https://www.andalsotoo.net/"><img src="img/footer_section/AATLogo.svg" class="AATLogo"></a>
+			</div>
+			<p>Sponsored by Allied Media Projects. Supported by the Digital Rights Community Grant Program, a partnership between Digital Justice Lab, Tech Reset Canada and Centre for Digital Rights. Design support from And Also Too.</p>
+		</footer>
+	</div>
+
 	</div>
 </body>
 </html>

@@ -9,7 +9,7 @@ body {
 
 .container {
 	width: 100%;
-	max-width: 1066px;
+	/*max-width: 1066px;*/
 	margin: 0 auto;
 }
 
@@ -58,7 +58,9 @@ li {
 header {
 	position: relative;
 	text-align: center;
-	z-index: 2
+	z-index: 2;
+	max-width: 1066px;
+	margin: 0 auto;
 }
 
 header h2{
@@ -96,12 +98,17 @@ header h2 .line {
 
 /*---- NAV SECTION (DESKTOP) -----*/
 
+.nav_container {
+	background-color: #F8E0FF;
+}
+
 nav {
 	display: grid;
 	grid-template-columns: max-content 1fr minmax(max-content, 10fr);
 	align-items: center;
-	background-color: #F8E0FF;
 	padding: 0 10px;
+	max-width: 1066px;
+	margin: 0 auto;
 }
 
 nav ul {
@@ -136,8 +143,10 @@ nav li {
 .good_digital_consent {
 	position: relative;
 	top: 50px;
-	z-index: 1;
+	z-index: 2;
 	margin-top: 30px;
+	max-width: 1066px;
+	margin: 0 auto;
 }
 
 .good_digital_consent p {
@@ -174,6 +183,7 @@ nav li {
 	    top: -71%;
 	    transform-origin: 100% 0%;
 	    transform: rotate(4deg) skewX(0deg);
+	    z-index: 3;
 	}
 
 .good_digital_consent_slant_2 {
@@ -195,6 +205,7 @@ nav li {
 	    background-color: #fff;
 	    transform-origin: 100% 0%;
 	    transform: rotate(90deg) skewX(-25deg);
+	    z-index: 1;
 	}
 
 
@@ -203,7 +214,8 @@ nav li {
 .fries {
 	background-color: #30023C;
 	padding-top: 10px;
-
+	position: relative;
+	z-index: -1;
 }
 
 .fries h2 {
@@ -216,15 +228,6 @@ nav li {
 
 .fries .underline-white {
     border-image-outset: 0 0 24px 0;
-
-   /* content: "";
-    background-image: url(img/underlines/Underline-White.svg);
-    background-repeat: repeat-x;
-    background-size: contain;
-    height: 10px;
-	display: inline-block;
-	padding: 0;
-	width:100%;*/
 }
 
 
@@ -243,8 +246,9 @@ nav li {
 }
 
 .fries_intro_wrapper {
-	margin: 1em 0em;
+	margin: 1em auto;
     padding-left: 4vw;
+    max-width: 1066px;
 }
 
 .fries ul {
@@ -254,9 +258,10 @@ nav li {
 	padding-left:0;
 	margin-top: 1em;
 	width: 90%;
-	margin: auto;
+	margin: 0 auto;
 	position: relative;
 	z-index: 3;
+	max-width: 1066px;
 }
 
 .fries li {
@@ -280,17 +285,18 @@ nav li {
 	position: relative;
 }
 .FRIES_comment {
-	background-color: #F8E0FF;
-	color: #30023C;
-	position: absolute;
-	width: 30%;
-	right: 0;
-	top: -750px;
-	padding: 6em 0;
-	overflow: hidden;
+	background: url(img/friesgraphics/trapezoid.svg);
+    position: absolute;
+    width: 400px;
+    right: 30px;
+    bottom: -110px;
+    padding: 180px 0;
+    z-index: 8;
+    height: 380px;
+    background-repeat: no-repeat; 
 }
 
-.FRIES_comment_slanted_top {
+/*.FRIES_comment_slanted_top {
 	overflow: hidden;
 }
 
@@ -306,13 +312,10 @@ nav li {
 	transform: rotate(-15deg) skewX(-12deg) ;
 	color: #30023C;
 
-}
+}*/
 
-.FRIES_comment p {
-    padding: 100px 0;
-}
-
-.FRIES_comment_slanted_bottom {
+/*.FRIES_comment_slanted_bottom {
+	display: none;
 	overflow: hidden;
 }
 
@@ -328,7 +331,7 @@ nav li {
 	transform: rotate(15deg) skewX(12deg) ;
 	color: #30023C;
 	z-index: 0;
-}
+}*/
 
 .comment_slant {
     width: 100%;
@@ -349,10 +352,15 @@ nav li {
     background-color: #30023C;
     transform-origin: 100% 0%;
     transform: rotate(-11deg) skewX(63deg);
-    z-index: 2;
+    z-index: -2;
 }
 
 /*--------- DOWNLOAD ZINE SECTION (DESKTOP) -------------*/
+
+.download_zine {
+	max-width: 1066px;
+	margin: 0 auto;
+}
 
 .download_zine h2 {
 	line-height: 1em;
@@ -392,7 +400,7 @@ nav li {
 	padding-top: 20%;
 	background: #fff;
 	position: relative;
-	z-index: 1;
+	z-index: -3;
 }
 
 .download_zine img {
@@ -473,11 +481,13 @@ nav li {
     transform-origin: 100% 0%;
     transform: rotate(45deg) skewX(-37deg);
 }
-
-.consentful_tech_in_action {
+.in_action_wrapper {
 	background-color: #30023C;
+}
+.consentful_tech_in_action {
 	padding-bottom: 10px;
-
+	max-width: 1066px;
+	margin: 0 auto;
 }
 
 .consentful_tech_in_action h2 {
@@ -524,19 +534,19 @@ nav li {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 0 3vw;
+	margin: 0 3%;
 }
 
 .consentful_tech_in_action li {
 	background-color: #F8E0FF;
 	color:#30023C;
-	margin: 1em 1vw;
-	width: 45vw;
+	margin: 106px 1%;
+	width: 45%;
 }
 
 .consentful_tech_in_action li img {
 	display: block;
-	padding-top: 4.5vw;
+	padding-top: 4.5%;
 	margin: auto;
 	max-width: 80%;
 }
@@ -573,6 +583,8 @@ nav li {
 /*------- SUPPORT SECTION (DESKTOP) -----*/
 	.support {
 		padding-top: 20%;
+		max-width: 1066px;
+		margin: 0 auto;
 	}
 
 	.support h2 {
@@ -666,6 +678,11 @@ nav li {
 
 
 /*------ GET IN TOUCH SECTION (DESKTOP) -------*/
+
+.get_in_touch {
+	max-width: 1066px;
+	margin: 0 auto;
+}
 
 .get_in_touch h2 {
 	display: inline-block;
@@ -781,14 +798,19 @@ nav li {
 
 /*---- FOOTER AREA ----*/
 
-footer {
+.footer_wrapper {
 	background-color: #30023C;
+}
+
+footer {
 	padding: 25px;
 	margin: 0 auto;
     display: grid;
     grid-template-columns: max-content 1fr;
     align-items: center;
-    grid-column-gap: 20px; 
+    grid-column-gap: 20px;
+    max-width: 1066px;
+    margin: 0 auto; 
 }
 
 .footer_imgs {
@@ -817,6 +839,12 @@ footer p {
 
     nav ul {
     	font-size: 1em;
+	}
+}
+@media only screen and (max-width: 1600px) {
+
+	.consentful_tech_in_action li {
+		margin: 1vw;
 	}
 }
 
@@ -849,6 +877,9 @@ footer p {
 		font-size: 0.9em
 	}
 
+	.FRIES_comment {
+		right: 0;
+	}
 
 	.donate, .bootcamp_survey, .purchase_zine {
 		background-size: 70%
@@ -867,19 +898,18 @@ footer p {
 		font-size: 2.5em;
 	}
 
+	.FRIES_comment {
+		font-size: 0.9em;
+	}
 
 	.support li a h3 {
 		font-size: 1em;
 	}
 
-	.FRIES_comment p {
-   		padding: 0;
-	}
-	
 	.fries li {
 	 	width: 45%;
 	}
-	
+
 	.support ul li {
 		padding: 4.5em 0;
 	}
@@ -888,6 +918,14 @@ footer p {
 @media only screen and (max-width: 700px) {
 	nav {
 		font-size: 0.7em;
+	}
+
+	.support h2, .consentful_tech_in_action h2 {
+		font-size: 2.9em;
+	}
+
+	.FRIES_comment {
+		font-size: 0.8em;
 	}
 }
 
@@ -899,6 +937,10 @@ footer p {
 
 	section {
 		padding: 1em 25px;
+	}
+
+	.fries {
+		padding: 0;
 	}
 
 	h2, h2 span {
@@ -926,6 +968,7 @@ footer p {
 		width: 100%;
 		max-width: none;
 	}
+
 
 	nav {
 		display: grid;
@@ -1167,9 +1210,6 @@ footer p {
 		display: none;
 	}
 
-	.FRIES_comment p {
-		padding-top: 1em;
-	}
 	.fries_slant {
 	    width: 100%;
 	    top:-10px;
@@ -1193,6 +1233,21 @@ footer p {
 	    z-index: 1;
 	}
 
+	.FRIES_comment {
+		background: #F8E0FF;
+		height: auto;
+		font-size: 1.25em;
+	}
+
+	.FRIES_comment p {
+		color: #30023C;
+		padding: 25px 0;
+	}
+
+/*	.FRIES_comment_slanted_bottom {
+		display: inline-block;
+	}*/
+
 	.comment_slant {
 	    width: 100%;
 	    padding-bottom: 70.92%; /* must be width / 1.41 */
@@ -1211,7 +1266,7 @@ footer p {
 	    background-color: #F8E0FF;
 	    transform-origin: 100% 0%;
 	    transform: rotate(13deg) skewX(13deg);
-	    z-index: -1;
+	    z-index: 3;
 	}
 
 	/*---- DOWNLOAD SECTION 600px --------*/
@@ -1408,10 +1463,6 @@ footer p {
 @media only screen and (max-width: 530px) {
 	header h2 {
 
-	}
-
-	.FRIES_comment p {
-		padding-top: 0;
 	}
 
 }
