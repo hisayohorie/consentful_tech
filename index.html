@@ -7,12 +7,14 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="main.css">	
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+	<script
+  	src="https://code.jquery.com/jquery-3.4.1.min.js"
   	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
- 	crossorigin="anonymous"></script>	
+  	crossorigin="anonymous"></script>	
   	<script src="consentful_tech.js"></script>
 </head>
 <body>
+	<div class="container">
 	<nav class="modal_close">
 		<h1 class="title_underline">The Consentful Tech Project</h1>
 		<section class="humburger" id="humburger">
@@ -31,26 +33,26 @@
 	</nav>
 	<div class="header_wrapper">
 	<header>
-		<img src="img/header_section/HeaderGraphicBig.svg" class="header_desktop">
+		<img src="img/header_section/HeaderGraphicDesktop.svg" class="header_desktop">
 		<img src="img/header_section/HeaderGraphicMobile.svg" class="header_mobile">
-		<h2>What is consentful tech?</h2>
+		<h2><span class="line">What is</span><span class="line"><span class="underline-purple">consentful</span> tech?</span></h2>
 	</header>
 	</div>
 	<main>
 		<section class="good_digital_consent" id="good_digital_consent">
 			<p>A lot of us have heard about consent with regard to our physical bodies, like in the context of medical decisions or sexual activities. But what does consent mean when it comes to our data and our digital lives?
 			</p>
-			<p>Consentful technologies are digital applications and
-			spaces that are built with consent at their core, and that support the self-determination of people who use and are affected by these technologies.
+			<p><em>Consentful technologies are digital applications and
+			spaces that are built with consent at their core, and that support the self-determination of people who use and are affected by these technologies.</em>
 			</p>
-			<p>The Consentful Tech Project raises awareness, develops strategies, and shares skills to help people build and use technology consentfully.
+			<p class="ctp_goals">The Consentful Tech Project raises awareness, develops strategies, and shares skills to help people build and use technology consentfully.
 			</p>
 		</section>
 		<div class="good_digital_consent_slant"></div>
 		<div class="good_digital_consent_slant_2"></div>
 		<section class="fries" id="fries">
 			<div class="fries_intro_wrapper">
-				<h2>Good digital consent is...</h2>
+				<h2 class="underline-white">Good digital consent is...</h2>
 				<p class="fries_intro">The Consentful Tech Project’s definition of good digital consent is adapted from Planned Parenthood’s definition of sexual consent, which abbreviates to the easy-to-remember, tasty acronym “FRIES.” According to this definition, consent must be:
 				</p>
 			</div>
@@ -108,7 +110,7 @@
 		<div class="comment_slant"></div>
 		<section class="download_zine" id="download_zine">
 			<div class="download_heading">
-				<h2><span><span class='underline'>Download</span> the zine</span></h2>
+				<h2><span><span class='underline-purple'>Download</span> the zine</span></h2>
 				<p>Note: we track the number of times these resources are downloaded but do not track any other information about visitors.</p>
 			</div>
 			<img src="img/download_section/BuildingConsentfulTech.png">
@@ -122,7 +124,7 @@
 		</section>
 		<div class="download_slant"></div>
 		<section class="consentful_tech_in_action" id="consentful_tech_in_action">
-			<h2>Consentful Tech in Action</h2>
+			<h2 class="underline-white">Consentful Tech in Action</h2>
 			<ul>
 				<li>
 					<img src="img/in_action_section/Bootcamp.jpg">
@@ -148,7 +150,7 @@
 		</section>
 		<div class="pointy-bottom"></div>
 		<section class="support" id="support">
-			<h2>Ways to support this work</h2>
+			<h2 class="underline-purple">Ways to support this work</h2>
 			<ul>
 				<li class="donate">
 					<a href="https://www.alliedmedia.org/consentful-tech-project/donate">
@@ -169,7 +171,7 @@
 		</section>
 		<section class="get_in_touch" id="get_in_touch">
 			<div class="get_in_touch_section_wrapper">
-				<h2>Get in touch</h2>
+				<h2 class="underline-purple">Get in touch</h2>
 				<!-- fnContact captcha -->
 				<div class="form_wrapper">
 					<form action="https://fncontact.com/consentfultechproject/post">
@@ -183,7 +185,7 @@
 		 					<div id='fnContactCaptcha'></div>
 							<h4 id="about_this_form">About this form</h4>
 		 				</div>
-		 				<script src='https://fncontact.com/captcha.js'></script>
+		 				<!-- <script src='https://fncontact.com/captcha.js'></script> -->
 		 				<div class="form_buttons">
 		 					<input type="submit" value="Send" class="submit">
 		 					<input type="reset" value="Clear" class="clear">
@@ -205,5 +207,6 @@
 		</div>
 		<p>Sponsored by Allied Media Projects. Supported by the Digital Rights Community Grant Program, a partnership between Digital Justice Lab, Tech Reset Canada and Centre for Digital Rights. Design support from And Also Too.</p>
 	</footer>
+	</div>
 </body>
 </html>
