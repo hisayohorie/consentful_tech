@@ -75,7 +75,7 @@ header h2 .line {
 .underline-purple, .underline-white {
 	display: inline-block;
 	vertical-align: top;
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #30023C;
     border-image-repeat: round;
     border-image-width: 0 0 10px 0;
     border-image-slice: 20;
@@ -361,7 +361,7 @@ nav li {
 }
 
 .download_zine h2 span {
-	display: inline-block;
+	/*display: inline-block;*/
 }
 
 /*.download_zine .underline-purple {
@@ -901,6 +901,22 @@ footer p {
 		padding: 1em 25px;
 	}
 
+	h2, h2 span {
+		text-decoration: underline;
+	}
+
+	header h2, header h2 span {
+		text-decoration: none;
+	}
+
+	.underline-white, .underline-purple {
+		border-bottom: none;
+	}
+
+	header .underline-purple {
+		border-bottom: 10px solid #30023C;
+	}
+
 	.header_desktop {
 		display: none;
 	}
@@ -1225,26 +1241,6 @@ footer p {
 	    z-index: -1;
 	}
 	
-	.download_zine h2 {
-		text-decoration: none;
-	}
-
-	.download_zine h2 .underline::after {
-		display: none;
-	}
-
-	.download_zine h2 span::after {
-	    content: "";
-	    background-image: url(img/underlines/Underlin-Purple.svg);
-	    background-repeat: repeat-x;
-	    background-size: contain;
-	    height: 10px;
-	    display: block;
-	    padding: 0;
-	    width: 100%;
-	    margin-top: 0.25em;
-	}
-
 	.download_zine img {
 		max-width: 100%;
 	}
