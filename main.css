@@ -913,6 +913,81 @@ footer p {
 	}
 }
 
+@media only screen and (max-width: 750px) {
+	.FRIES_comment {
+		padding: 110px 0 0 0;
+		position: static;
+		width:100%;
+	}
+	.FRIES_comment::before {
+		display: none;
+	}
+
+	.FRIES_comment::after {
+		display: none;
+	}
+
+	.fries_slant {
+	    width: 100%;
+	    top:-10px;
+	    padding-bottom: 70.92%; /* must be width / 1.41 */
+	    position: relative;
+	    overflow: hidden;
+	    margin-bottom: -70.92%;
+
+	}
+
+	.fries_slant:before {
+	    content: '';
+	    position: absolute;
+	    top: -96%;
+	    left: -33%;
+	    width: 125%;
+	    height: 100%;
+	    background-color: #30023C;
+	    transform-origin: 100% 0%;
+	    transform: rotate(-10deg) skewX(-3deg);
+	    z-index: 1;
+	}
+
+	.FRIES_comment {
+		background: #F8E0FF;
+		height: auto;
+		font-size: 1.25em;
+	}
+
+	.FRIES_comment p {
+		color: #30023C;
+		padding: 25px 0;
+	}
+
+/*	.FRIES_comment_slanted_bottom {
+		display: inline-block;
+	}*/
+
+	.comment_slant {
+	    width: 100%;
+	    padding-bottom: 70.92%; /* must be width / 1.41 */
+	    margin-bottom: -60%;
+	    position: relative;
+	    overflow: hidden;
+	}
+
+	.comment_slant:before {
+	    content: '';
+	    position: absolute;
+	    top: -63%;
+	    left: -19px;
+	    width: 125%;
+	    height: 100%;
+	    background-color: #F8E0FF;
+	    transform-origin: 100% 0%;
+	    transform: rotate(13deg) skewX(13deg);
+	    z-index: 3;
+	}
+
+}
+
 @media only screen and (max-width: 700px) {
 	nav {
 		font-size: 0.7em;
@@ -939,22 +1014,6 @@ footer p {
 
 	.fries {
 		padding: 0;
-	}
-
-	h2, h2 span {
-		text-decoration: underline;
-	}
-
-	header h2, header h2 span {
-		text-decoration: none;
-	}
-
-	.underline-white, .underline-purple {
-		border-bottom: none;
-	}
-
-	header .underline-purple {
-		border-bottom: 10px solid #30023C;
 	}
 
 	.header_desktop {
@@ -1105,7 +1164,8 @@ footer p {
 
 
 	/*------ GOOD DIGITAL CONSENT SECTION 600px -------*/
-	
+
+
 	.good_digital_consent p {
 		font-size: 1.25em;
 	}
@@ -1161,8 +1221,10 @@ footer p {
 		margin-top: 1.75em;
 	}
 
-	.fries h2::after {
-		display: none;
+	.fries .underline-white {
+		line-height: 1;
+		border-image-slice: 18;
+		border-image-outset: 0 0 2px 0;
 	}
 
 	.fries h3 {
@@ -1170,10 +1232,6 @@ footer p {
 		color: #fff;
 		font-size: 1.75em;
 		margin: 15px 0;
-	}
-
-	.fries p, .fries h2 {
-		color: #fff;
 	}
 
 	.fries ul {
@@ -1195,78 +1253,7 @@ footer p {
 		vertical-align: middle;
 	}
 
-	.FRIES_comment {
-		padding: 110px 0 0 0;
-		position: static;
-		width:100%;
-	}
-	.FRIES_comment::before {
-		display: none;
-	}
-
-	.FRIES_comment::after {
-		display: none;
-	}
-
-	.fries_slant {
-	    width: 100%;
-	    top:-10px;
-	    padding-bottom: 70.92%; /* must be width / 1.41 */
-	    position: relative;
-	    overflow: hidden;
-	    margin-bottom: -70.92%;
-
-	}
-
-	.fries_slant:before {
-	    content: '';
-	    position: absolute;
-	    top: -96%;
-	    left: -33%;
-	    width: 125%;
-	    height: 100%;
-	    background-color: #30023C;
-	    transform-origin: 100% 0%;
-	    transform: rotate(-10deg) skewX(-3deg);
-	    z-index: 1;
-	}
-
-	.FRIES_comment {
-		background: #F8E0FF;
-		height: auto;
-		font-size: 1.25em;
-	}
-
-	.FRIES_comment p {
-		color: #30023C;
-		padding: 25px 0;
-	}
-
-/*	.FRIES_comment_slanted_bottom {
-		display: inline-block;
-	}*/
-
-	.comment_slant {
-	    width: 100%;
-	    padding-bottom: 70.92%; /* must be width / 1.41 */
-	    margin-bottom: -60%;
-	    position: relative;
-	    overflow: hidden;
-	}
-
-	.comment_slant:before {
-	    content: '';
-	    position: absolute;
-	    top: -63%;
-	    left: -19px;
-	    width: 125%;
-	    height: 100%;
-	    background-color: #F8E0FF;
-	    transform-origin: 100% 0%;
-	    transform: rotate(13deg) skewX(13deg);
-	    z-index: 3;
-	}
-
+	
 	/*---- DOWNLOAD SECTION 600px --------*/
 
 	.download_heading {
@@ -1478,6 +1465,10 @@ footer p {
 	.consentful_tech_in_action li {
 		margin: 0.75em 1vw;
 	}
+
+	.support .underline-purple {
+		font-size: 0.75em;
+	}
 	
 }
 
@@ -1489,6 +1480,17 @@ footer p {
 
 	}
 
+	.download_zine .underline-purple {
+		font-size: 0.8em;
+	}
+	
+	.consentful_tech_in_action h2 {
+		font-size: 2em;
+	}
+
+	.consentful_tech_in_action .underline-white {
+		border-image-slice: 15;
+	}
 
 }
 
@@ -1522,6 +1524,16 @@ footer p {
 	.support h2 {
 		margin-top: 0.7em;
 	}
+
+	.support .underline-purple {
+		font-size: 0.6em;
+	}
+
+	.get_in_touch .underline-purple {
+		font-size: 2.5em;
+		border-image-slice: 18;	
+	}
+
 	/*--------------- FOOTER SECTION 398px --------------------*/
 
 	.footer_imgs img {
@@ -1542,9 +1554,8 @@ footer p {
 		grid-column: 2;
 	}
 
-	.consentful_tech_in_action h2 {
-		padding-left: 4vw;
-		font-size: 2em;
+	.download_zine .underline-purple {
+		font-size: 0.6em;
 	}
 
 	.support li a h3 {
