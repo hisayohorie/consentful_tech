@@ -418,7 +418,7 @@ nav li {
 
 .download_btn_wrapper {
 	width: 100%;
-	text-align: center;
+	text-align: left;
 }
 
 .download_btn_wrapper a:hover {
