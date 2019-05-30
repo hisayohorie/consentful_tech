@@ -1,6 +1,5 @@
 
 /* ---- TYPPGRAPHY -------*/
-
 body {
 	font-family: 'Work Sans', sans-serif;
 	max-width: 100%;
@@ -253,26 +252,28 @@ nav li {
 
 .fries_intro_wrapper {
 	margin: 1em auto;
-    padding-left: 4vw;
     max-width: 1066px;
+    padding-left: 4vw;
+
 }
 
 .fries ul {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	padding-left:0;
+	padding-left: 4vw;
 	margin-top: 1em;
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	position: relative;
 	z-index: 3;
 	max-width: 1066px;
+	box-sizing: border-box;
 }
 
 .fries li {
 	width: 30%;
-	margin: 0.5em 1em;
+	margin: 5px;
 }
 
 .fries li p {
@@ -416,6 +417,11 @@ nav li {
 	display: inline-block;
 	width: 45%;
 	margin: 0 1em;
+	vertical-align: top;
+}
+
+.zine_explanation h3 {
+	line-height: 1.5;
 }
 
 .zine_explanation p {
@@ -812,7 +818,7 @@ footer {
     display: grid;
     grid-template-columns: max-content 1fr;
     align-items: center;
-    grid-column-gap: 20px;
+    grid-column-gap: 52px;
     max-width: 1066px;
     margin: 0 auto; 
 }
@@ -839,17 +845,25 @@ footer p {
 	width: 100%;
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1200px) {
 
-    nav ul {
-    	font-size: 1em;
+	.FRIES_comment {
+		right: 0;
+		width: 30%;
+		height: auto;
+		padding: 220px 0;
 	}
 }
-@media only screen and (max-width: 1600px) {
+
+@media only screen and (max-width: 1066px) {
+	.FRIES_comment {
+		padding: 160px 0 180px 0;
+	}
 
 	.consentful_tech_in_action li {
 		margin: 1vw;
 	}
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -870,60 +884,14 @@ footer p {
 	}
 }
 
-@media only screen and (max-width: 900px){
-
-	main {
-		position: relative;
-		top: -2em;
-	}
-
-	nav {	
-		font-size: 0.9em
-	}
-
+@media only screen and (max-width: 925px) {
 	.FRIES_comment {
-		right: 0;
-	}
-
-	.donate, .bootcamp_survey, .purchase_zine {
-		background-size: 70%
-	}
-
-}
-
-
-@media only screen and (max-width: 800px) {
-
-	nav {
-		font-size: 0.8em;
-	}
-
-	.fries h2 {
-		font-size: 2.5em;
-	}
-
-	.FRIES_comment {
-		font-size: 0.9em;
-	}
-
-	.support li a h3 {
-		font-size: 1em;
-	}
-
-	.fries li {
-	 	width: 45%;
-	}
-
-	.support ul li {
-		padding: 4.5em 0;
-	}
-}
-
-@media only screen and (max-width: 750px) {
-	.FRIES_comment {
-		padding: 100px 0 50px 0;
+		padding: 220px 0 50px 0;
 		position: static;
 		width:100%;
+		background: #F8E0FF;
+		height: auto;
+		font-size: 1.25em;
 	}
 	.FRIES_comment::before {
 		display: none;
@@ -957,10 +925,7 @@ footer p {
 	}
 
 	.FRIES_comment {
-		background: #F8E0FF;
-		height: auto;
-		font-size: 1.25em;
-		padding: 150px 0 50px 0;
+		padding-top: 160px;
 	}
 
 	.FRIES_comment p {
@@ -993,6 +958,50 @@ footer p {
 	}
 
 }
+
+@media only screen and (max-width: 900px){
+
+	main {
+		position: relative;
+		top: -2em;
+	}
+
+	nav {	
+		font-size: 0.9em
+	}
+
+
+	.donate, .bootcamp_survey, .purchase_zine {
+		background-size: 70%
+	}
+
+}
+
+
+@media only screen and (max-width: 800px) {
+
+	nav {
+		font-size: 0.8em;
+	}
+
+	.fries h2 {
+		font-size: 2.5em;
+	}
+
+	.support li a h3 {
+		font-size: 1em;
+	}
+
+	.fries li {
+	 	width: 45%;
+	}
+
+	.support ul li {
+		padding: 4.5em 0;
+	}
+}
+
+
 
 @media only screen and (max-width: 700px) {
 	nav {
@@ -1249,13 +1258,10 @@ footer p {
 
 	.fries ul {
 		display: block;
-		padding:0;
-		margin: 1em;
 	}
 
 	.fries li {
 		width: 90%;
-		margin: 0.5em;
 	}
 
 
@@ -1324,6 +1330,7 @@ footer p {
 		max-width: 80%;
 		margin: auto;
 		padding: 0.5em;
+		font-size: 1.5em;
 	}
 
 	.consentful_tech_in_action p {
@@ -1482,6 +1489,14 @@ footer p {
 	.support .underline-purple {
 		font-size: 0.75em;
 	}
+
+	.footer_imgs a {
+		width: 47.5%;
+	}
+
+	.AATLogo {
+		margin-left: 5%;
+	}
 	
 }
 
@@ -1542,11 +1557,6 @@ footer p {
 		border-image-slice: 18;	
 	}
 
-	/*--------------- FOOTER SECTION 398px --------------------*/
-
-	.footer_imgs img {
-		max-width: 40%;
-	}
 }
 
 @media only screen and (max-width: 340px) {
