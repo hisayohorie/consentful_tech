@@ -915,7 +915,7 @@ footer p {
 
 @media only screen and (max-width: 750px) {
 	.FRIES_comment {
-		padding: 110px 0 0 0;
+		padding: 100px 0 50px 0;
 		position: static;
 		width:100%;
 	}
@@ -954,11 +954,11 @@ footer p {
 		background: #F8E0FF;
 		height: auto;
 		font-size: 1.25em;
+		padding: 150px 0 50px 0;
 	}
 
 	.FRIES_comment p {
 		color: #30023C;
-		padding: 25px 0;
 	}
 
 /*	.FRIES_comment_slanted_bottom {
@@ -997,7 +997,7 @@ footer p {
 		font-size: 2.9em;
 	}
 
-	.FRIES_comment {
+	.FRIES_comment p {
 		font-size: 0.8em;
 	}
 }
@@ -1477,9 +1477,12 @@ footer p {
 		top: -95%;
 		left: -32%;
 		transform: rotate(-9deg) skewX(-3deg);
-
 	}
 
+	.FRIES_comment {
+		padding-top: 100px;
+	}
+	
 	.download_zine .underline-purple {
 		font-size: 0.8em;
 	}
@@ -1509,14 +1512,6 @@ footer p {
 		line-height: 1.5em;
 	}
 
-	.humburger {
-		margin: 5px 30px;
-	}
-	/*-------- FRIES COMMENT SECTION 398px ------------------*/
-	.FRIES_comment {
-		padding-top: 70px;
-	}
-
 	/*------------- SUPPORT SECTION 398px -------------------*/
 	.support li a h3 {
 		font-size: 1.1em;
@@ -1542,17 +1537,6 @@ footer p {
 }
 
 @media only screen and (max-width: 340px) {
-	nav {
-		grid-template-columns: max-content max-content;
-	}
-
-	.humburger {
-		grid-column: 2;
-	}
-
-	.humburger_close {
-		grid-column: 2;
-	}
 
 	.download_zine .underline-purple {
 		font-size: 0.6em;
