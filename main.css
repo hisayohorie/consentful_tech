@@ -550,7 +550,7 @@ nav li {
 .consentful_tech_in_action li {
 	background-color: #F8E0FF;
 	color:#30023C;
-	margin: 106px 1%;
+	margin: 1%;
 	width: 45%;
 }
 
@@ -1205,7 +1205,7 @@ footer p {
 	}
 
 	.good_digital_consent_slant:before {
-	    top: -73%;
+	    top: -65%;
 	    left: -25%;
 	}
 
