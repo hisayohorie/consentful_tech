@@ -74,7 +74,7 @@ header h2 .line {
 	display: block;
 }
 
-.underline-purple, .underline-white {
+.underline-purple, .underline-white, .modal_open h1 {
 	display: inline-block;
 	vertical-align: top;
     border-bottom: 10px solid #30023C;
@@ -88,8 +88,14 @@ header h2 .line {
 
 }
 
-.underline-white {
+.underline-white, .modal_open h1 {
     border-image-source: url(img/underlines/Underline-White-Box.svg);
+}
+
+.modal_open h1 {
+	border-image-slice: 10;
+	padding-top: 10px;
+    border-image-width: 0 0 7px 0;
 }
 
 .header_mobile {
@@ -1052,7 +1058,9 @@ footer p {
 		color: #fff;
 	}
 
-	.title_underline::after {
+
+
+/*	.title_underline::after {
 		height: 8px;
 		display: inline-block;
 		padding: 0;
@@ -1061,11 +1069,11 @@ footer p {
 
 	.modal_open .title_underline::after {
 		content:"";
-		/*height:8px;*/
+		height:8px;
 		background-image: url(img/underlines/Underline-White.svg);
 		background-repeat: repeat-x;
 		background-size: contain;
-	}
+	}*/
 
 	main {
 		position: relative;
@@ -1109,13 +1117,16 @@ footer p {
 
 	/* add to ul.nav when humburger click */
 	.modal_open .nav {
-		display: grid;	
-		padding: 0 1em;
-		margin:0px;
+		display: block;	
+		width: 100%;
+		padding: 0 10px;
+		left: 10px;
+    	position: relative;
+		margin: 0px;
 		grid-column-start: 1;
-		grid-column-end: 7;
-		grid-template-columns: 100%;
-		grid-template-rows: 20% 20% 20% 20% 20%;
+		grid-column-end: 4;
+		/*grid-template-columns: 100%;*/
+		/*grid-template-rows: 20% 20% 20% 20% 20%;*/
 		z-index: 10;
 		background-color: #30023C;
 
@@ -1123,8 +1134,10 @@ footer p {
 	}
 
 	nav li {
-		font-size: 1em;
+		font-size: 1.1em;
+		font-weight: normal;
 		padding: 1em 0;
+		display: block;
 	}
 
 	/* humberger menu */
