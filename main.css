@@ -57,7 +57,7 @@ li {
 header {
 	position: relative;
 	text-align: center;
-	z-index: 2;
+	/*z-index: 2;*/
 	max-width: 1066px;
 	margin: 0 auto;
 }
@@ -148,7 +148,7 @@ nav li {
 .good_digital_consent {
 	position: relative;
 	top: 50px;
-	z-index: 2;
+	/*z-index: 2;*/
 	margin-top: 30px;
 	max-width: 1066px;
 	margin: 0 auto;
@@ -176,7 +176,7 @@ nav li {
     margin-bottom: -70%;
     position: relative;
     overflow: hidden;
-    z-index: 0;
+    /*z-index: 0;*/
 }
 
 .good_digital_consent_slant:before {
@@ -188,7 +188,7 @@ nav li {
 	    top: -71%;
 	    transform-origin: 100% 0%;
 	    transform: rotate(4deg) skewX(0deg);
-	    z-index: 3;
+	    z-index: 1;
 	}
 
 .good_digital_consent_slant_2 {
@@ -220,7 +220,7 @@ nav li {
 	background-color: #30023C;
 	padding-top: 10px;
 	position: relative;
-	z-index: -1;
+	/*z-index: -1;*/
 }
 
 .fries h2 {
@@ -266,7 +266,7 @@ nav li {
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
-	z-index: 3;
+	/*z-index: 3;*/
 	max-width: 1066px;
 	box-sizing: border-box;
 }
@@ -296,7 +296,7 @@ nav li {
     right: 30px;
     bottom: -110px;
     padding: 180px 0;
-    z-index: 8;
+    z-index: 2;
     height: 380px;
     background-repeat: no-repeat; 
 }
@@ -357,7 +357,7 @@ nav li {
     background-color: #30023C;
     transform-origin: 100% 0%;
     transform: rotate(-11deg) skewX(63deg);
-    z-index: -2;
+    z-index: 1;
 }
 
 /*--------- DOWNLOAD ZINE SECTION (DESKTOP) -------------*/
@@ -405,7 +405,7 @@ nav li {
 	padding-top: 20%;
 	background: #fff;
 	position: relative;
-	z-index: -3;
+	/*z-index: -3;*/
 }
 
 .download_zine img {
@@ -632,7 +632,7 @@ nav li {
 	
 	.support li a {
 		display: inline-block;
-		z-index: 100;
+		/*z-index: 100;*/
 		
 	}
 
@@ -921,7 +921,7 @@ footer p {
 	    background-color: #30023C;
 	    transform-origin: 100% 0%;
 	    transform: rotate(-10deg) skewX(-3deg);
-	    z-index: 1;
+	    /*z-index: 1;*/
 	}
 
 	.FRIES_comment {
@@ -954,7 +954,7 @@ footer p {
 	    background-color: #F8E0FF;
 	    transform-origin: 100% 0%;
 	    transform: rotate(13deg) skewX(13deg);
-	    z-index: 3;
+	    /*z-index: 3;*/
 	}
 
 }
@@ -1049,7 +1049,7 @@ footer p {
 		background-color: #30023C;
 		color: #fff;
 		height: 50px;
-		z-index: 10;
+		z-index: 1;
 		position: relative;
 		align-items: center;
 	}
@@ -1086,7 +1086,7 @@ footer p {
 
 	main {
 		position: relative;
-		z-index: 2;
+		/*z-index: 2;*/
 	}
 
 	h1 {
@@ -1136,7 +1136,7 @@ footer p {
 		grid-column-end: 4;
 		/*grid-template-columns: 100%;*/
 		/*grid-template-rows: 20% 20% 20% 20% 20%;*/
-		z-index: 10;
+		/*z-index: 10;*/
 		background-color: #30023C;
 
 
@@ -1297,7 +1297,7 @@ footer p {
 	    background-color: #30023C;
 	    transform-origin: 100% 0%;
 	    transform: rotate(6deg) skewX(0deg);
-	    z-index: -1;
+	    /*z-index: -1;*/
 	}
 	
 	.download_zine img {
