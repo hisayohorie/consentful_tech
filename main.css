@@ -152,6 +152,7 @@ nav li {
 	margin-top: 30px;
 	max-width: 1066px;
 	margin: 0 auto;
+	padding-left: 25px;
 }
 
 .good_digital_consent p {
@@ -254,7 +255,7 @@ nav li {
 	margin: 1em auto;
     max-width: 1066px;
     padding-left: 4vw;
-
+    margin-left: 25px;
 }
 
 .fries ul {
@@ -274,6 +275,7 @@ nav li {
 .fries li {
 	width: 30%;
 	margin: 5px;
+	margin-left: 25px;
 }
 
 .fries li p {
@@ -405,6 +407,7 @@ nav li {
 	padding-top: 20%;
 	background: #fff;
 	position: relative;
+	padding-left: 25px;
 	/*z-index: -3;*/
 }
 
@@ -421,7 +424,7 @@ nav li {
 }
 
 .zine_explanation h3 {
-	line-height: 1.5;
+	line-height: 1;
 }
 
 .zine_explanation p {
@@ -503,9 +506,9 @@ nav li {
 .consentful_tech_in_action h2 {
 	color: #FFF;
 	margin-top:0;
-	line-height: 1em;
+	line-height: 1;
 	display: inline-block;
-	padding-left: 0;
+	padding-left: 25px;
 	margin-left: 4vw;
 }
 
@@ -595,11 +598,12 @@ nav li {
 		padding-top: 20%;
 		max-width: 1066px;
 		margin: 0 auto;
+		padding-left: 25px;
 	}
 
 	.support h2 {
 		display: inline-block;
-		line-height: 1em;
+		line-height: 1;
 		margin-left: 4vw;
 		padding-left: 0;
 	}
@@ -696,7 +700,7 @@ nav li {
 
 .get_in_touch h2 {
 	display: inline-block;
-	line-height: 1em;
+	line-height: 1;
 	margin: 0;
 	margin-bottom: 0.5em;
 	margin-left: 4vw;
@@ -730,6 +734,7 @@ nav li {
 .get_in_touch {
 	overflow-x: hidden;
 	position: relative;
+	padding-left: 25px;
 }
 
 .form_wrapper {
@@ -886,12 +891,13 @@ footer p {
 
 @media only screen and (max-width: 925px) {
 	.FRIES_comment {
-		padding: 220px 0 50px 0;
+		padding: 220px 0 50px 25px;
 		position: static;
 		width:100%;
 		background: #F8E0FF;
 		height: auto;
 		font-size: 1.25em;
+		box-sizing: border-box;
 	}
 	.FRIES_comment::before {
 		display: none;
@@ -930,6 +936,7 @@ footer p {
 
 	.FRIES_comment p {
 		color: #30023C;
+		margin-left: 4vw;
 	}
 
 /*	.FRIES_comment_slanted_bottom {
@@ -1091,8 +1098,8 @@ footer p {
 
 	h1 {
 		font-size: 1em;
-		line-height: 1em;
-		margin: 0 0 0 1em;
+		line-height: 1;
+		margin: 0 0 0 10px;
 		color: #fff;
 		grid-column-start: 1;
 		background-color: #30023C;
@@ -1101,7 +1108,7 @@ footer p {
 
 	h2 {
 		font-size: 3.125em;
-		line-height: 1.25em;
+		line-height: 1;
 		font-weight: bold;
 	}
 	
@@ -1128,7 +1135,8 @@ footer p {
 	.modal_open .nav {
 		display: block;	
 		width: 100%;
-		padding: 0 10px;
+		padding: 10px;
+		padding-top: 0px;
 		left: 10px;
     	position: relative;
 		margin: 0px;
@@ -1147,6 +1155,7 @@ footer p {
 		font-weight: normal;
 		padding: 1em 0;
 		display: block;
+		margin-left: 10px;
 	}
 
 	/* humberger menu */
@@ -1180,8 +1189,8 @@ footer p {
 	}
 
 	header .underline-purple {
-		border-image-slice: 24;
-		line-height: 1.25
+		border-image-slice: 17;
+		line-height: 2.5rem;
 	}
 
 
@@ -1239,7 +1248,7 @@ footer p {
 	.fries h2 {
 		max-width: 380px;
 		font-size: 2.5em;
-		line-height: 1.7em;
+		line-height: 1;
 		margin-top: 1.75em;
 	}
 
@@ -1276,7 +1285,7 @@ footer p {
 	/*---- DOWNLOAD SECTION 600px --------*/
 
 	.download_heading {
-		padding-left: 0;
+		padding-left: 4vw;
 	}
 
 	.download_slant {
@@ -1307,6 +1316,7 @@ footer p {
 	.zine_explanation {
 		width: 100%;
 		margin: 0;
+		padding-left: 4vw;
 	}
 	/*---- CONSENTFUL TECH IN ACTION SECTION 600px --------*/
 
@@ -1415,15 +1425,18 @@ footer p {
 		transform:translate(-50%, -50%);
 		text-align: center;
 		font-size: 1.3em;
-		line-height: 1.25em;
+		line-height: 1.25;
 		color: #fff;
 		width: 30%;
 	}
 
 	/*------- GET IN TOUCH SECTION 600px --------------*/
 
-	section.get_in_touch {
+	.get_in_touch {
 		padding-top: 0;
+	}
+	.get_in_touch_section_wrapper {
+		padding-left: 4vw;
 	}
 	.get_in_touch h2 {
 		margin:20px 0;
@@ -1479,15 +1492,19 @@ footer p {
 	}
 
 	header .underline-purple {
-		border-image-slice: 20;
+		/*border-image-slice: 20;*/
 	}
 
 	.consentful_tech_in_action li {
 		margin: 0.75em 1vw;
 	}
 
+	.support h2 {
+		font-size: 2.2em;
+	}
+
 	.support .underline-purple {
-		font-size: 0.75em;
+		border-image-slice: 16;
 	}
 
 	.footer_imgs a {
@@ -1537,7 +1554,7 @@ footer p {
 
 	h2 {
 		margin: 0.5em 0;
-		line-height: 1.5em;
+		line-height: 1;
 	}
 
 	/*------------- SUPPORT SECTION 398px -------------------*/
@@ -1548,8 +1565,12 @@ footer p {
 		margin-top: 0.7em;
 	}
 
+	.support h2 {
+		font-size: 1.8em;
+	}
+
 	.support .underline-purple {
-		font-size: 0.6em;
+		border-image-slice: 14;
 	}
 
 	.get_in_touch .underline-purple {
