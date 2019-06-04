@@ -121,14 +121,13 @@ nav ul {
 	display: flex;
 	justify-content: space-evenly;
 	grid-column: 3;
-	font-weight: bold;
-	font-size: 1em;
-	justify-self: end;
 }
 
 nav li {
 	display: inline;
 	margin: 0 5px;
+	font-weight: 500;
+	font-size: 0.8em;
 }
 
 .nav li a {
@@ -988,7 +987,7 @@ footer p {
 @media only screen and (max-width: 800px) {
 
 	nav {
-		font-size: 0.8em;
+		/*font-size: 0.8em;*/
 	}
 
 	.fries h2 {
@@ -1012,12 +1011,10 @@ footer p {
 
 @media only screen and (max-width: 700px) {
 	nav {
-		font-size: 0.7em;
+		/*font-size: 0.7em;*/
 	}
 
-	.support h2, .consentful_tech_in_action h2 {
-		font-size: 2.9em;
-	}
+	
 
 	.FRIES_comment p {
 		font-size: 0.8em;
@@ -1032,6 +1029,46 @@ footer p {
 
 	section {
 		padding: 1em 25px;
+	}
+
+	.hide {
+		display: none;
+	}
+	
+	.show {
+		display: block;
+	}
+
+	/*ul.nav */
+	.modal_close .nav {
+		display: grid;
+		padding-left:0;
+		padding: 0 0.2em;
+		margin:0;
+		grid-column-start: 1;
+		grid-column-end: 4;
+		grid-template-columns: 100%;
+		grid-template-rows: 25% 25% 25% 25%;
+		display: none;
+	}
+
+	/* add to ul.nav when humburger click */
+	.modal_open .nav {
+		display: block;	
+		width: 100%;
+		padding: 10px;
+		padding-top: 0px;
+		left: -10px;
+    	position: relative;
+		margin: 0px;
+		grid-column-start: 1;
+		grid-column-end: 4;
+		/*grid-template-columns: 100%;*/
+		/*grid-template-rows: 20% 20% 20% 20% 20%;*/
+		/*z-index: 10;*/
+		background-color: #30023C;
+
+
 	}
 
 	.fries {
@@ -1107,7 +1144,7 @@ footer p {
 	}
 
 	h2 {
-		font-size: 3.125em;
+		font-size: 2.9em;
 		line-height: 1;
 		font-weight: bold;
 	}
@@ -1118,37 +1155,7 @@ footer p {
 		line-height: 1.2em;
 	}
 
-	/*ul.nav */
-	.modal_close .nav {
-		display: grid;
-		padding-left:0;
-		padding: 0 0.2em;
-		margin:0;
-		grid-column-start: 1;
-		grid-column-end: 4;
-		grid-template-columns: 100%;
-		grid-template-rows: 25% 25% 25% 25%;
-		display: none;
-	}
-
-	/* add to ul.nav when humburger click */
-	.modal_open .nav {
-		display: block;	
-		width: 100%;
-		padding: 10px;
-		padding-top: 0px;
-		left: 10px;
-    	position: relative;
-		margin: 0px;
-		grid-column-start: 1;
-		grid-column-end: 4;
-		/*grid-template-columns: 100%;*/
-		/*grid-template-rows: 20% 20% 20% 20% 20%;*/
-		/*z-index: 10;*/
-		background-color: #30023C;
-
-
-	}
+	
 
 	nav li {
 		font-size: 1.1em;
@@ -1319,7 +1326,9 @@ footer p {
 		padding-left: 4vw;
 	}
 	/*---- CONSENTFUL TECH IN ACTION SECTION 600px --------*/
-
+	.support h2, .consentful_tech_in_action h2 {
+		font-size: 2.9em;
+	}
 	.consentful_tech_in_action {
 		background-color: #30023C;
 		padding: 1em 10px;
@@ -1500,11 +1509,11 @@ footer p {
 	}
 
 	.support h2 {
-		font-size: 2.2em;
+		/*font-size: 2.2em;*/
 	}
 
 	.support .underline-purple {
-		border-image-slice: 16;
+		/*border-image-slice: 16;*/
 	}
 
 	.footer_imgs a {
@@ -1529,15 +1538,15 @@ footer p {
 	}
 	
 	.download_zine .underline-purple {
-		font-size: 0.8em;
+		/*font-size: 0.8em;*/
 	}
 	
 	.consentful_tech_in_action h2 {
-		font-size: 2em;
+		/*font-size: 2em;*/
 	}
 
 	.consentful_tech_in_action .underline-white {
-		border-image-slice: 15;
+		/*border-image-slice: 15;*/
 	}
 
 }
@@ -1566,16 +1575,16 @@ footer p {
 	}
 
 	.support h2 {
-		font-size: 1.8em;
+		/*font-size: 1.8em;*/
 	}
 
 	.support .underline-purple {
-		border-image-slice: 14;
+		/*border-image-slice: 14;*/
 	}
 
 	.get_in_touch .underline-purple {
-		font-size: 2.5em;
-		border-image-slice: 18;	
+		/*font-size: 2.5em;*/
+		/*border-image-slice: 18;	*/
 	}
 
 }
@@ -1583,7 +1592,7 @@ footer p {
 @media only screen and (max-width: 340px) {
 
 	.download_zine .underline-purple {
-		font-size: 0.6em;
+		/*font-size: 0.6em;*/
 	}
 
 	.support li a h3 {
