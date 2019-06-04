@@ -372,6 +372,7 @@ nav li {
 	line-height: 1em;
 	display: block;
 	margin: 0;
+	margin-top: 50px;
 }
 
 .download_zine h2 span {
@@ -694,7 +695,7 @@ nav li {
 
 .get_in_touch {
 	max-width: 1066px;
-	margin: 0 auto;
+	margin: 50px auto;
 }
 
 .get_in_touch h2 {
