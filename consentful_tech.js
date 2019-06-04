@@ -68,8 +68,5 @@ document.addEventListener('DOMContentLoaded',function(){
 		modalContainer.classList.toggle('modal_open');
 		iconToHide.classList.toggle("hide");
 		iconToShow.classList.toggle("show");
-
-		// iconToHide.style.display="none";
-		// iconToShow.style.display="block";
 	}
 });
