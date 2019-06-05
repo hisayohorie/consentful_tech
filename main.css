@@ -1035,6 +1035,24 @@ footer p {
 	    overflow-x: hidden;
 	}
 
+	nav h1::after {
+		margin-bottom: -10px;
+	}
+	
+  nav h1::after {
+    content: "";
+    background-repeat: space;
+    background-size: contain;
+    height: 10px;
+		display: block;
+		padding: 0;
+		width: 100%;
+}
+
+	.modal_open h1::after {
+	    background-image: url(img/underlines/Underline-White.svg);
+	}
+
 	section {
 		padding: 1em 25px;
 	}
