@@ -73,29 +73,29 @@ header h2 .line {
 	display: block;
 }
 
-.underline-purple, .underline-white, .modal_open h1 {
+/* .underline-purple, .underline-white, .modal_open h1 {
 	display: inline-block;
 	vertical-align: top;
     border-bottom: 10px solid #30023C;
     border-image-repeat: round;
     border-image-width: 0 0 10px 0;
     border-image-slice: 20;
-}
+} */
 
-.underline-purple {
+/* .underline-purple {
     border-image-source: url(img/underlines/Underline-Purple-Box.svg);
 
-}
+} */
 
-.underline-white, .modal_open h1 {
+/* .underline-white, .modal_open h1 {
     border-image-source: url(img/underlines/Underline-White-Box.svg);
-}
+} */
 
-.modal_open h1 {
+/* .modal_open h1 {
 	border-image-slice: 10;
 	padding-top: 10px;
     border-image-width: 0 0 7px 0;
-}
+} */
 
 .header_mobile {
 	display: none;
@@ -232,7 +232,7 @@ nav li {
 }
 
 .fries .underline-white {
-    border-image-outset: 0 0 24px 0;
+    /* border-image-outset: 0 0 24px 0; */
 }
 
 
@@ -299,7 +299,7 @@ nav li {
     padding: 180px 0;
     z-index: 2;
     height: 380px;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 
 /*.FRIES_comment_slanted_top {
@@ -383,17 +383,25 @@ nav li {
 	border-image-slice: 20;
 }*/
 
-/*.download_zine h2 .underline::after {
+.underline-purple::after {
+    background-image: url(img/underlines/Underlin-Purple.svg);
+}
+.underline-white::after {
+    background-image: url(img/underlines/Underline-White.svg);
+}
+.underline-purple, .underline-white {
+	display: inline-block;
+}
+.underline-purple::after, .underline-white::after {
     content: "";
-    background-image: url(img/underlines/Underline-Purple.svg);
-    background-repeat: repeat-x;
+    background-repeat: space;
     background-size: contain;
     height: 10px;
-	display: block;
-	padding: 0;
-	width: 100%;
-	margin-top: 0.25em;
-}*/
+		display: block;
+		padding: 0;
+		width: 100%;
+		margin-top: 0.25em;
+}
 
 .download_heading {
 	padding-left: 4vw;
@@ -633,11 +641,11 @@ nav li {
 		text-align: center;
 		padding: 8em 0;
 	}
-	
+
 	.support li a {
 		display: inline-block;
 		/*z-index: 100;*/
-		
+
 	}
 
 	.donate {
@@ -651,12 +659,12 @@ nav li {
 		background-image: url(img/support/Shape1_hover.svg);
 
 	}
-	
+
 	.bootcamp_survey {
 		background-image: url(img/support/Shape2.svg);
 		background-repeat: no-repeat;
 		background-position: center;
-		background-image: contain;		
+		background-image: contain;
 	}
 
 	.bootcamp_survey:hover {
@@ -825,7 +833,7 @@ footer {
     align-items: center;
     grid-column-gap: 52px;
     max-width: 1066px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .footer_imgs {
@@ -973,7 +981,7 @@ footer p {
 		top: -2em;
 	}
 
-	nav {	
+	nav {
 		font-size: 0.9em
 	}
 
@@ -1015,7 +1023,7 @@ footer p {
 		/*font-size: 0.7em;*/
 	}
 
-	
+
 
 	.FRIES_comment p {
 		font-size: 0.8em;
@@ -1035,7 +1043,7 @@ footer p {
 	.hide {
 		display: none;
 	}
-	
+
 	.show {
 		display: block;
 	}
@@ -1055,7 +1063,7 @@ footer p {
 
 	/* add to ul.nav when humburger click */
 	.modal_open .nav {
-		display: block;	
+		display: block;
 		width: 100%;
 		padding: 10px;
 		padding-top: 0px;
@@ -1141,7 +1149,7 @@ footer p {
 		color: #fff;
 		grid-column-start: 1;
 		background-color: #30023C;
-		display: inline-block;	
+		display: inline-block;
 	}
 
 	h2 {
@@ -1149,14 +1157,14 @@ footer p {
 		line-height: 1;
 		font-weight: bold;
 	}
-	
+
 	p {
 		font-size: 1em;
 		color: #30023C;
 		line-height: 1.2em;
 	}
 
-	
+
 
 	nav li {
 		font-size: 1.1em;
@@ -1196,10 +1204,10 @@ footer p {
 		max-width: 250px;
 	}
 
-	header .underline-purple {
+	/* header .underline-purple {
 		border-image-slice: 17;
 		line-height: 2.5rem;
-	}
+	} */
 
 
 	/*------ GOOD DIGITAL CONSENT SECTION 600px -------*/
@@ -1261,9 +1269,9 @@ footer p {
 	}
 
 	.fries .underline-white {
-		line-height: 1;
+		/* line-height: 1;
 		border-image-slice: 18;
-		border-image-outset: 0 0 2px 0;
+		border-image-outset: 0 0 2px 0; */
 	}
 
 	.fries h3 {
@@ -1289,7 +1297,7 @@ footer p {
 		vertical-align: middle;
 	}
 
-	
+
 	/*---- DOWNLOAD SECTION 600px --------*/
 
 	.download_heading {
@@ -1316,7 +1324,7 @@ footer p {
 	    transform: rotate(6deg) skewX(0deg);
 	    /*z-index: -1;*/
 	}
-	
+
 	.download_zine img {
 		max-width: 100%;
 	}
@@ -1496,7 +1504,7 @@ footer p {
 }
 
 @media only screen and (max-width: 485px) {
-	
+
 	header h2 {
 	  font-size: 2.5em;
 	}
@@ -1524,7 +1532,7 @@ footer p {
 	.AATLogo {
 		margin-left: 5%;
 	}
-	
+
 }
 
 @media only screen and (max-width: 433px) {
@@ -1537,11 +1545,11 @@ footer p {
 	.FRIES_comment {
 		padding-top: 100px;
 	}
-	
+
 	.download_zine .underline-purple {
 		/*font-size: 0.8em;*/
 	}
-	
+
 	.consentful_tech_in_action h2 {
 		/*font-size: 2em;*/
 	}
@@ -1559,7 +1567,7 @@ footer p {
 	}
 
 	header .underline-purple {
-		border-image-slice: 18;
+		/* border-image-slice: 18; */
 	}
 
 	h2 {
