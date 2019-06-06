@@ -244,10 +244,10 @@ nav li {
 }
 
 .fries li p {
-	margin-top: 1em;
 	margin: 0 auto;
 	line-height: 1.25em;
 	width: 100%;
+	margin-top: 1em;
 }
 
 .fries_img {
