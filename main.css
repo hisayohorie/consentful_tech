@@ -244,6 +244,7 @@ nav li {
 }
 
 .fries li p {
+	margin-top: 1em;
 	margin: 0 auto;
 	line-height: 1.25em;
 	width: 100%;
@@ -871,6 +872,10 @@ footer p {
 
 
 @media only screen and (max-width: 800px) {
+
+	.fries_intro {
+		width: 90%;
+	}
 
 	.fries h2 {
 		font-size: 2.5em;
