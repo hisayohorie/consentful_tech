@@ -51,8 +51,10 @@ li {
 	list-style-type: none;
 }
 
-.support:focus, .download_zine:focus, .consentful_tech_in_action:focus, .get_in_touch:focus {
-	outline: none;
+.support:focus,.download_zine:focus,
+.consentful_tech_in_action:focus,
+.get_in_touch:focus {
+	outline-color: #CD6CE7;
 }
 
 /*--- HEADER ---*/
