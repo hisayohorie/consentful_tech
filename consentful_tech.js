@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded',function(){
 	var form_modal = document.getElementById('form_modal');
 	var form_close = document.querySelector('.form_modal_close');
 
+	var contactForm = document.querySelector("#contact-form");
+
   	$('nav a[href*="#"]:not([href="#"])').click(function(e) {
   		e.preventDefault();
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -69,4 +71,24 @@ document.addEventListener('DOMContentLoaded',function(){
 		iconToHide.classList.toggle("hide");
 		iconToShow.classList.toggle("show");
 	}
+
+	contactForm.addEventListener("submit", function(event){
+		event.preventDefault();
+		var formData = $(this).serialize();
+		$.ajax({
+			url: this.action,
+			method: this.method,
+			data: formData
+		}).done(function(data) {
+			console.log("success");
+
+			console.log(data);
+		}).fail(function(data){
+			console.log("fail");
+
+			console.log(data);
+
+		})
+	})
+
 });
