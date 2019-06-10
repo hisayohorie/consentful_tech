@@ -72,23 +72,5 @@ document.addEventListener('DOMContentLoaded',function(){
 		iconToShow.classList.toggle("show");
 	}
 
-	contactForm.addEventListener("submit", function(event){
-		event.preventDefault();
-		var formData = $(this).serialize();
-		$.ajax({
-			url: this.action,
-			method: this.method,
-			data: formData
-		}).done(function(data) {
-			console.log("success");
-
-			console.log(data);
-		}).fail(function(data){
-			console.log("fail");
-
-			console.log(data);
-
-		})
-	})
 
 });
